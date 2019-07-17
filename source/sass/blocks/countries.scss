@@ -1,0 +1,29 @@
+$count-lineheight: 18px;
+$count-fontweight: 500;
+$count-color: transparentize(#444444, 0.7);
+
+.countries {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.countries__title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+}
+
+.countries__description {
+  line-height: $count-lineheight;
+  font-weight: $count-fontweight;
+  color: $count-color;
+}
+
+.countries__amount {
+  padding-left: 20px;
+  line-height: $count-lineheight;
+  font-weight: $count-fontweight;
+  color: $count-color;
+}

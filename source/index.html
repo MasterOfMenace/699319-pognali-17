@@ -2,27 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>«Погнали?» Приложение для поиска попутчиков</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./sass/normalize.css">
+    <link rel="stylesheet" href="./sass/global.css">
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo">
-        <img class="page-header__pognali-logo" src="./img/pognali-logo.svg" alt="Логотип приложения «Погнали»" width="100" height="19">
+        <img class="page-header__pognali-logo" src="./img/logo-mobile-white@1x.png" alt="Логотип приложения «Погнали»" width="100" height="19">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Меню</button>
         <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="#">О сервисе</a>
+          <li>
+            <a class="site-list__item" href="#">О сервисе</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Направления</a>
+          <li>
+            <a class="site-list__item" href="#">Направления</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Попутчики</a>
+          <li>
+            <a class="site-list__item" href="#">Попутчики</a>
           </li>
         </ul>
         <ul class="main-nav__list user-list">
@@ -31,10 +32,10 @@
           </li>
         </ul>
         <ul class="main-nav__list contacts-list">
-          <li class="contacts-list__item">
+          <li class="contacts-list__item contacts-list__item--phone">
               8 800 555-86-28
           </li>
-          <li class="contacts-list__item">
+          <li class="contacts-list__item contacts-list__item--email">
             <a class="contacts-list__email" href="#">
                 mail@htmlacademy.ru
             </a>
@@ -108,35 +109,35 @@
         </div>
       </section>
 
-      <section class="countries">
-        <h2 class="countries__title">Направления</h2>
+      <section class="directions">
+        <h2 class="directions__title">Направления</h2>
 
-        <p class="countries__description">
+        <p class="directions__description">
             Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
         </p>
 
-        <ul class="countries__list countries">
+        <ul class="direcrions__list countries">
           <li class="countries__item">
-            <img class="countries__img" src="./img/thailand.jpg" alt="Фотография видов Тайланда">
+            <img class="countries__img" src="./img/thailand-mobile@1x.jpg" alt="Фотография видов Тайланда" width="270" height="110">
             <h3 class="countries__title">Тайланд</h3>
             <p class="countries__description">Джунгли зовут!</p>
-            <span class="countries__amount"></span>
+            <span class="countries__amount">18321</span>
           </li>
           <li class="countries__item">
-            <img class="countries__img" src="./img/france.jpg" alt="Фотография видов Франции">
+            <img class="countries__img" src="./img/france-mobile@1x.jpg" alt="Фотография видов Франции" width="270" height="110">
             <h3 class="countries__title">Франция</h3>
             <p class="countries__description">Трэ бьен, манифик!</p>
-            <span class="countries__amount"></span>
+            <span class="countries__amount">12518</span>
           </li>
           <li class="countries__item">
-            <img class="countries__img" src="./img/czech.jpg" alt="Фотография видов Чехии">
+            <img class="countries__img" src="./img/czech-mobile@1x.jpg" alt="Фотография видов Чехии" width="270" height="110">
             <h3 class="countries__title">Чехия</h3>
             <p class="countries__description">Закоулки старой европы</p>
-            <span class="countries__amount"></span>
+            <span class="countries__amount">5326</span>
           </li>
         </ul>
 
-        <a href="form.html" class="countries__show-all button">Показать все</a>
+        <a href="form.html" class="directions__show-all button">Показать все</a>
       </section>
 
       <section class="travelmates">
@@ -160,7 +161,7 @@
                 <td class="travellers__level-caption">level</td>
               </tr>
             </table>
-            <img src="./img/tanyafirsova.jpg" alt="Фотография Тани Фирсовой" class="travellers__image">
+            <img src="./img/firsova-desktop@1x.jpg" alt="Фотография Тани Фирсовой" class="travellers__image" width="270" height="270">
             <h3 class="travellers__name">Таня Фирсова</h3>
             <p class="travellers__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
             <ul class="travellers__transport transport-list">

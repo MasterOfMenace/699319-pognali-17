@@ -1,0 +1,16 @@
+.directions {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.directions__title {
+  @include section-title;
+}
+
+.directions__description {
+  color: #444444;
+}
+
+.directions__show-all {
+  padding: 24px 142px 24px 24px;
+}

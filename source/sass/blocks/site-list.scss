@@ -1,0 +1,19 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site-list__item {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #192144;
+}

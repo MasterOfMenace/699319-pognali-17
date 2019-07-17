@@ -1,0 +1,11 @@
+.travelmates__title {
+  @include section-title;
+}
+
+.travelmates__description--second {
+  font-weight: 700;
+}
+
+.travelmates__show-all {
+  padding: 24px 132px 24px 24px;
+}
