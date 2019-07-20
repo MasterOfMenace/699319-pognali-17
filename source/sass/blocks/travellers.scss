@@ -1,7 +1,39 @@
 .travellers {
   list-style: none;
 
-  width: $mobile-block-width;
   margin: 0;
   padding: 0;
+
+  color: #444444;
+}
+
+.travellers__item {
+  background-color: #ffffff;
+}
+
+.travellers__level {
+  background-color: transparentize(#000000, 0.6);
+  color: #ffffff;
+}
+
+.travellers__level-value {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.travellers__level-caption {
+  margin: 0;
+  font-weight: 14px;
+  font-size: 400;
+  line-height: 14px;
+}
+
+.travellers__name {
+  margin: 0;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #1d2e5b;
 }
