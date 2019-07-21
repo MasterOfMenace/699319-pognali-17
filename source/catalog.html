@@ -11,19 +11,19 @@
 <body>
   <header class="page-header">
     <a class="page-header__logo" href="index.html">
-      <img class="page-header__pognali-logo" src="./img/pognali-logo.svg" alt="Логотип приложения «Погнали»" width="100" height="19">
+      <img class="page-header__pognali-logo" src="./img/logo-mobile-white@1x.png" alt="Логотип приложения «Погнали»" width="100" height="19">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">Меню</button>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a href="#">О сервисе</a>
+        <li>
+          <a class="site-list__item" href="#">О сервисе</a>
         </li>
-        <li class="site-list__item">
-          <a href="#">Направления</a>
+        <li>
+          <a class="site-list__item" href="#">Направления</a>
         </li>
-        <li class="site-list__item">
-          <a href="#">Попутчики</a>
+        <li>
+          <a class="site-list__item" href="#">Попутчики</a>
         </li>
       </ul>
       <ul class="main-nav__list user-list">
@@ -57,7 +57,7 @@
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main--silver">
       <h1 class="visually-hidden">Поиск попутчиков</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
@@ -70,7 +70,7 @@
         <ul class="travelmates__list travellers">
           <li class="travellers__item">
             <a class="travellers__profile-link" href="#">
-              <img class="travellers__image" src="./img/tanyafirsova.jpg" alt="Фотография Тани Фирсовой">
+              <img class="travellers__image" src="./img/firsova-mobile@1x.jpg" alt="Фотография Тани Фирсовой">
               <h3 class="travellers__name">Таня Фирсова</h3>
             </a>
             <p class="travellers__likes">1,5 M</p>
@@ -91,27 +91,23 @@
 
             <p class="travellers__transport-title">Транспорт:</p>
             <ul class="travellers__transport transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
-              <li class="transport-list__item transport-list__item--bus">Автобус</li>
-              <li class="transport-list__item transport-list__item--bike">Байк</li>
-              <li class="transport-list__item transport-list__item--run">Пешкодралом</li>
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"><span class="visually-hidden">Самолет</span></li>
+              <li class="transport-list__item transport-list__item--bus"><span class="visually-hidden">Автобус</span></li>
+              <li class="transport-list__item transport-list__item--bike"><span class="visually-hidden">Байк</span></li>
+              <li class="transport-list__item transport-list__item--run"><span class="visually-hidden">Пешкодралом</span></li>
             </ul>
 
-            <table class="travellers__level">
-              <tr>
-                <th class="travellers__level-value">99</th>
-              </tr>
-              <tr>
-                <td class="travellers__level-caption">level</td>
-              </tr>
-            </table>
+            <div class="travellers__level travellers__level--transparent">
+              <p class="travellers__level-value travellers__level-value--blue">99</p>
+              <p class="travellers__level-caption travellers__level-caption--silver">level</p>
+            </div>
 
-            <a class="travellers__invite" href="#">Позвать</a>
+            <a class="travellers__invite button" href="#">Позвать</a>
           </li>
 
           <li class="travellers__item">
             <a class="travallers__profile-link" href="#">
-              <img class="travellers__image" src="./img/petyademin.jpg" alt="Фотография Пети Демина">
+              <img class="travellers__image" src="./img/demin-mobile@1x.jpg" alt="Фотография Пети Демина">
               <h3 class="travellers__name">Петя Демин</h3>
             </a>
             <p class="travellers__likes">150</p>
@@ -129,27 +125,23 @@
 
             <p class="travellers__transport-title">Транспорт:</p>
             <ul class="travellers__transport transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
-              <li class="transport-list__item transport-list__item--bus transport-list__item--active">Автобус</li>
-              <li class="transport-list__item transport-list__item--bike">Байк</li>
-              <li class="transport-list__item transport-list__item--run transport-list__item--active">Пешкодралом</li>
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"><span class="visually-hidden">Самолет</span></li>
+              <li class="transport-list__item transport-list__item--bus transport-list__item--active"><span class="visually-hidden">Автобус</span></li>
+              <li class="transport-list__item transport-list__item--bike"><span class="visually-hidden">Байк</span></li>
+              <li class="transport-list__item transport-list__item--run transport-list__item--active"><span class="visually-hidden">Пешкодралом</span></li>
             </ul>
 
-            <table class="travellers__level">
-              <tr>
-                <th class="travellers__level-value">80</th>
-              </tr>
-              <tr>
-                <td class="travellers__level-caption">level</td>
-              </tr>
-            </table>
+            <div class="travellers__level travellers__level--transparent">
+              <p class="travellers__level-value travellers__level-value--blue">80</p>
+              <p class="travellers__level-caption travellers__level-caption--silver">level</p>
+            </div>
 
-            <a class="travellers__invite"  href="#">Позвать</a>
+            <a class="travellers__invite button"  href="#">Позвать</a>
           </li>
 
           <li class="travellers__item">
             <a class="travellers__profile-link" href="#"></a>
-            <img class="travellers__image" src="./img/marksmolov.jpg" alt="Фотография Марка Смолова">
+            <img class="travellers__image" src="./img/smolov-mobile@1x.jpg" alt="Фотография Марка Смолова">
             <h3 class="travellers__name">Марк Смолов</h3>
             <p class="travellers__likes">1700</p>
             <p class="travellers__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -169,27 +161,23 @@
 
             <p class="travellers__transport-title">Транспорт:</p>
             <ul class="travellers__transport transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
-              <li class="transport-list__item transport-list__item--bus">Автобус</li>
-              <li class="transport-list__item transport-list__item--bike">Байк</li>
-              <li class="transport-list__item transport-list__item--run transport-list__item--active">Пешкодралом</li>
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"><span class="visually-hidden">Самолет</span></li>
+              <li class="transport-list__item transport-list__item--bus"><span class="visually-hidden">Автобус</span></li>
+              <li class="transport-list__item transport-list__item--bike"><span class="visually-hidden">Байк</span></li>
+              <li class="transport-list__item transport-list__item--run transport-list__item--active"><span class="visually-hidden">Пешкодралом</span></li>
             </ul>
 
-            <table class="travellers__level">
-              <tr>
-                <th class="travellers__level-value">25</th>
-              </tr>
-              <tr>
-                <td class="travellers__level-caption">level</td>
-              </tr>
-            </table>
+            <div class="travellers__level travellers__level--transparent">
+              <p class="travellers__level-value travellers__level-value--blue">25</p>
+              <p class="travellers__level-caption travellers__level-caption--silver">level</p>
+            </div>
 
-            <a class="travellers__invite" href="#" >Позвать</a>
+            <a class="travellers__invite button" href="#" >Позвать</a>
           </li>
 
           <li class="travellers__item">
             <a class="travellers__profile-link" href="#">
-              <img class="travellers__image" src="./img/larisarogovaya.jpg" alt="Фотография Ларисы Роговой">
+              <img class="travellers__image" src="./img/rogovaya-mobile@1x.jpg" alt="Фотография Ларисы Роговой">
               <h3 class="travellers__name">Лариса Роговая</h3>
             </a>
             <p class="travellers__likes">23</p>
@@ -207,22 +195,18 @@
 
             <p class="travellers__transport-title">Транспорт:</p>
             <ul class="travellers__transport transport-list">
-              <li class="transport-list__item transport-list__item--plane transport-list__item--active">Самолет</li>
-              <li class="transport-list__item transport-list__item--bus transport-list__item--active">Автобус</li>
-              <li class="transport-list__item transport-list__item--bike">Байк</li>
-              <li class="transport-list__item transport-list__item--run">Пешкодралом</li>
+              <li class="transport-list__item transport-list__item--plane transport-list__item--active"><span class="visually-hidden">Самолет</span></li>
+              <li class="transport-list__item transport-list__item--bus transport-list__item--active"><span class="visually-hidden">Автобус</span></li>
+              <li class="transport-list__item transport-list__item--bike"><span class="visually-hidden">Байк</span></li>
+              <li class="transport-list__item transport-list__item--run"><span class="visually-hidden">Пешкодралом</span></li>
             </ul>
 
-            <table class="travellers__level">
-              <tr>
-                <th class="travellers__level-value">50</th>
-              </tr>
-              <tr>
-                <td class="travellers__level-caption">level</td>
-              </tr>
-            </table>
+            <div class="travellers__level travellers__level--transparent">
+              <p class="travellers__level-value travellers__level-value--blue">50</p>
+              <p class="travellers__level-caption travellers__level-caption--silver">level</p>
+            </div>
 
-            <a class="travellers__invite" href="#">Позвать</a>
+            <a class="travellers__invite button" href="#">Позвать</a>
           </li>
         </ul>
 
@@ -236,7 +220,7 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo" href="index.html">
-      <img class="page-footer__pognali-logo" src="./img/pognali-footer-logo.svg" alt="Логотип приложения «Погнали»" width="96" height="15">
+      <img class="page-footer__pognali-logo" src="./img/logo-mobile-blue@1x.png" alt="Логотип приложения «Погнали»" width="96" height="15">
     </a>
 
     <div class="page-footer__social social">
