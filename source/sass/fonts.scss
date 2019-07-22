@@ -61,32 +61,3 @@
   src: local("Blogger Sans"),
     url("../fonts/bloggersans-bolditalic.woff");
 }
-
-body {
-  padding: 0;
-  margin: 0;
-
-  font-family: "Blogger Sans", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 22px;
-  color: #ffffff;
-
-  background-color: #161c35;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}

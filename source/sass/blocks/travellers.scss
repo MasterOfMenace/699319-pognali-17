@@ -34,8 +34,8 @@
 
 .travellers__level-caption {
   margin: 0;
-  font-weight: 14px;
-  font-size: 400;
+  font-weight: 400;
+  font-size: 14px;
   line-height: 14px;
 }
 
@@ -49,4 +49,18 @@
   font-weight: 700;
   line-height: 21px;
   color: #1d2e5b;
+}
+
+.travellers__likes {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+}
+
+.travellers__invite {
+  font-size: 17px;
+  line-height: 30px;
+  color: #161c35;
+  text-transform: uppercase;
 }
