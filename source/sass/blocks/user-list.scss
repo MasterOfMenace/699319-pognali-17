@@ -1,0 +1,27 @@
+.user-list {
+  list-style: none;
+
+  // margin: 0;
+  padding: 0;
+  width: 270px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.user-list__login {
+  display: inline-block;
+  background-color: #ffd74b;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #192144;
+
+  padding: 18px 81px 16px 77px;
+
+  border-radius: 23px;
+}

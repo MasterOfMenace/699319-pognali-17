@@ -1,0 +1,21 @@
+.contacts-list {
+  list-style: none;
+
+  // margin: 0;
+  padding: 0;
+  width: 270px;
+
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  color: #192144;
+  text-transform: uppercase;
+}
+
+.contacts-list__item {
+  padding: 17px 0 17px 60px;
+}
+
+.contacts-list__email {
+  color: #192144;
+}

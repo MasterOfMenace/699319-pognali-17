@@ -1,0 +1,21 @@
+.tariffs {
+  background-color: #edeff6;
+  color: #444444;
+}
+
+.tariffs__title {
+  @include section-title;
+  margin: 0;
+}
+
+.tariffs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tariffs__link {
+  font-weight: 700;
+  line-height: 16px;
+  color: #192144;
+}
