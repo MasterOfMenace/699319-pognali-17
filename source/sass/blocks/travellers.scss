@@ -5,6 +5,23 @@
   padding: 0;
 
   color: #444444;
+
+  @media (min-width: 728px) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 1200px) {
+    width: 630px;
+  }
+}
+
+.travellers--inner-page {
+  flex-direction: column;
+
+  @media (min-width: 1200px) {
+    width: 975px;
+  }
 }
 
 .travellers__item {

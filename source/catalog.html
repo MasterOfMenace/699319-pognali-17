@@ -65,7 +65,7 @@
         <section class="travelmates">
           <h2 class="visually-hidden">Попутчики</h2>
 
-          <ul class="travelmates__list travellers">
+          <ul class="travelmates__list travellers travellers--inner-page">
             <li class="travellers__item">
               <a class="travellers__profile-link" href="#">
                 <img class="travellers__image" src="./img/firsova-mobile@1x.jpg" alt="Фотография Тани Фирсовой">
@@ -210,9 +210,29 @@
 
           <a class="travelmates__show-more" href="#">Показать еще</a>
 
-          <div class="travelmates__pagination">
-            <a href="#" class="travelmates__previous-page">Назад</a>
-            <a href="#" class="travelmates__next-page">Вперед</a>
+          <div class="travelmates__pagination pagination">
+            <ul class="pagination__list pagination__pages">
+              <li class="pagination__pages-item pagination__pages-item--active">
+                <a href="#">1</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a href="#">2</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a href="#">3</a>
+              </li>
+              <li class="pagination__pages-item">
+                <a href="#">4</a>
+              </li>
+            </ul>
+            <ul class="pagination__list pagination__buttons">
+              <li class="pagination__buttons-item--previous-page">
+                <a href="#" class="pagination__previous-page">Назад</a>
+              </li>
+              <li class="pagination__buttons-item--next-page">
+                <a href="#" class="pagination__next-page">Вперед</a>
+              </li>
+            </ul>
           </div>
         </section>
     </main>

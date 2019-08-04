@@ -1,6 +1,20 @@
 .directions {
+  display: flex;
+  flex-direction: column;
   background-color: #edeff6;
   color: #000000;
+
+  @media (min-width: 1200px) {
+    position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
+.directions__wrapper {
+  @media (min-width: 1200px) {
+    width: 630px;
+  }
 }
 
 .directions__title {
@@ -12,5 +26,13 @@
 }
 
 .directions__show-all {
+  display: inline-block;
   padding: 24px 142px 24px 24px;
+  // order: 4;
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    bottom: 0;
+    right: 355px;
+  }
 }

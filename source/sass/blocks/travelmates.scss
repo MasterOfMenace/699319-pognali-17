@@ -1,3 +1,22 @@
+.travelmates {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.travelmates--main-page {
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.travelmates__wrapper {
+  @media (min-width: 1200px) {
+    width: 630px;
+  }
+}
+
 .travelmates__title {
   @include section-title;
 }
@@ -7,10 +26,18 @@
 }
 
 .travelmates__show-all {
+  display: inline-block;
   padding: 24px 132px 24px 24px;
+
+  @media (min-width: 1200px) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .travelmates__show-more {
+  display: inline-block;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
@@ -18,6 +45,6 @@
   text-transform: uppercase;
 }
 
-.travelmates__pagination {
-  background-color: #ffffff;
-}
+// .travelmates__pagination {
+//   background-color: #ffffff;
+// }

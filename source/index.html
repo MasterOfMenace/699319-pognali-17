@@ -53,101 +53,113 @@
           </ul>
         </div>
       </nav>
+
+      <p class="page-header__slogan">В путешествие с крутыми попутчиками!</p>
+
+      <ul class="page-header__user-list user-list">
+        <li class="user-list__item">
+          <a class="user-list__login" href="#">Авторизация</a>
+        </li>
+      </ul>
+      <ul class="page-header__contacts-list contacts-list">
+        <li class="contacts-list__item contacts-list__item--phone">
+            8 800 555-86-28
+        </li>
+        <li class="contacts-list__item contacts-list__item--email">
+          <a class="contacts-list__email" href="#">
+              mail@htmlacademy.ru
+          </a>
+        </li>
+      </ul>
+
+      <blockquote class="page-header__review review">
+        <p class="review__text">
+            «Лучшее приложение, что я видел в жизни!»
+        </p>
+        <cite class="review__author">
+            Мурат Эльтазин главный редактор газеты «гаджетлайф»
+        </cite>
+      </blockquote>
+
+      <div class="page-header__how-it-works how-it-works">
+        <h2 class="visually-hidden">Как это работает</h2>
+        <ul class="how-it-works__list">
+          <li class="how-it-works__item how-it-works__item--first">Выберите направление</li>
+          <li class="how-it-works__item how-it-works__item--second">Изучите идеи путешественников</li>
+          <li class="how-it-works__item how-it-works__item--third">Найдите тех, кто похож на вас</li>
+          <li class="how-it-works__item how-it-works__item--fourth">Путешествуйте вместе!</li>
+        </ul>
+      </div>
     </header>
 
     <main class="page-main">
       <h1 class="visually-hidden">Приложение для поиска попутчиков «Погнали»</h1>
 
       <section class="about">
-        <header class="about__header">
-          <!-- <h2 class="visually-hidden"></h2> -->
-          <p class="about__slogan">В путешествие с крутыми попутчиками!</p>
-          <div class="about__nav navigation">
-            <ul class="navigation__list">
-              <li class="navigation__item navigation__item--phone">
-                <a href="#">Позвонить</a>
-              </li>
-              <li class="navigation__item navigation__item--email">
-                <a href="#">Отправить письмо</a>
-              </li>
-              <li class="navigation__item navigation__item--login button">
-                <a href="#">Авторизация</a>
-              </li>
-            </ul>
-          </div>
-        </header>
-
-        <blockquote class="about__review review">
-          <p class="review__text">
-              «Лучшее приложение, что я видел в жизни!»
-          </p>
-          <cite class="review__author">
-              Мурат Эльтазин главный редактор газеты «гаджетлайф»
-          </cite>
-        </blockquote>
-
-        <div class="about__how-it-works how-it-works">
-          <h2 class="visually-hidden">Как это работает</h2>
-          <ul class="how-it-works__list">
-            <li class="how-it-works__item how-it-works__item--first">Выберите направление</li>
-            <li class="how-it-works__item how-it-works__item--second">Изучите идеи путешественников</li>
-            <li class="how-it-works__item how-it-works__item--third">Найдите тех, кто похож на вас</li>
-            <li class="how-it-works__item how-it-works__item--fourth">Путешествуйте вместе!</li>
-          </ul>
-        </div>
-
-        <div class="about__service service">
-          <h2 class="service__title">О сервисе</h2>
-          <p class="service__description--first">
+        <div class="about__wrapper">
+          <h2 class="about__title">О сервисе</h2>
+          <p class="about__description--first">
               Любое путешествие веселее с попутчиками, которые на одной волне с тобой! Делитесь своими идеями путешествий и черпайте вдохновение в чужих.
           </p>
-          <p class="service__description--second">
+          <p class="about__description--second">
               А если найдете кого-то близкого по духу — скорее зовите в совместный трип!
           </p>
+          <a href="#" class="about__link button">Подробнее</a>
         </div>
+        <img src="./img/about-tablet@1x.png" alt="Промо-картинка" class="about__image" width="376" height="548">
       </section>
 
       <section class="directions">
-        <h2 class="directions__title">Направления</h2>
+        <div class="directions__wrapper">
+          <h2 class="directions__title">Направления</h2>
 
-        <p class="directions__description">
-            Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
-        </p>
+          <p class="directions__description">
+              Мы не продаем туры и ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
+          </p>
+        </div>
 
         <ul class="direcrions__list countries">
           <li class="countries__item">
             <img class="countries__img" src="./img/thailand-mobile@1x.jpg" alt="Фотография видов Тайланда" width="270" height="110">
-            <h3 class="countries__title">Тайланд</h3>
-            <p class="countries__description">Джунгли зовут!</p>
-            <span class="countries__amount">18321</span>
+            <div class="countries__wrapper">
+              <h3 class="countries__title">Тайланд</h3>
+              <p class="countries__description">Джунгли зовут!</p>
+              <span class="countries__amount">18321</span>
+            </div>
           </li>
           <li class="countries__item">
             <img class="countries__img" src="./img/france-mobile@1x.jpg" alt="Фотография видов Франции" width="270" height="110">
-            <h3 class="countries__title">Франция</h3>
-            <p class="countries__description">Трэ бьен, манифик!</p>
-            <span class="countries__amount">12518</span>
+            <div class="countries__wrapper">
+              <h3 class="countries__title">Франция</h3>
+              <p class="countries__description">Трэ бьен, манифик!</p>
+              <span class="countries__amount">12518</span>
+            </div>
           </li>
           <li class="countries__item">
             <img class="countries__img" src="./img/czech-mobile@1x.jpg" alt="Фотография видов Чехии" width="270" height="110">
-            <h3 class="countries__title">Чехия</h3>
-            <p class="countries__description">Закоулки старой европы</p>
-            <span class="countries__amount">5326</span>
+            <div class="countries__wrapper">
+              <h3 class="countries__title">Чехия</h3>
+              <p class="countries__description">Закоулки старой европы</p>
+              <span class="countries__amount">5326</span>
+            </div>
           </li>
         </ul>
 
         <a href="form.html" class="directions__show-all button">Показать все</a>
       </section>
 
-      <section class="travelmates">
-        <h2 class="travelmates__title">Попутчики</h2>
+      <section class="travelmates travelmates--main-page">
+        <div class="travelmates__wrapper">
+          <h2 class="travelmates__title">Попутчики</h2>
 
-        <p class="travelmates__description--first">
-            Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
-        </p>
+          <p class="travelmates__description--first">
+              Все мы индивидуальны и у каждого свой взгляд на идеальный отдых. Одному нужен пляж и коктейль, а другому маршрут для хайкинга.
+          </p>
 
-        <p class="travelmates__description--second">
-            Теперь можно легко найти единомышленников!
-        </p>
+          <p class="travelmates__description--second">
+              Теперь можно легко найти единомышленников!
+          </p>
+        </div>
 
         <ul class="travelmates__list travellers">
           <li class="travellers__item">

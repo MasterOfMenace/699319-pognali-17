@@ -6,10 +6,25 @@ $count-color: transparentize(#444444, 0.7);
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 1200px) {
+    width: 630px;
+  }
 }
 
 .countries__item {
   background-color: #ffffff;
+
+  @media (min-width: 728px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.countries__img {
+  @media (min-width: 728px) {
+    order: 2;
+  }
 }
 
 .countries__title {

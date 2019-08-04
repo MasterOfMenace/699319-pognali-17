@@ -1,4 +1,5 @@
 body {
+  min-width: 320px;
   padding: 0;
   margin: 0;
 
@@ -11,6 +12,28 @@ body {
 
   background-color: #161c35;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+//обводки
+// body > * {
+//   background: rgba(255, 0, 0, 0.3);
+// }
+
+// body > * > * {
+//   background: rgba(255, 255, 0, 0.3);
+// }
+
+// body > * > * > * {
+//   background: rgba(0, 0, 255, 0.3);
+// }
+
+// body > * > * > * > * {
+//   background: rgba(0, 255, 255, 0.3);
+// }
 
 a {
   text-decoration: none;
