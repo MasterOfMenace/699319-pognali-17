@@ -21,8 +21,20 @@
   @include section-title;
 }
 
+.travelmates__description--first {
+  @media (min-width: 728px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
 .travelmates__description--second {
   font-weight: 700;
+
+  @media (min-width: 728px) {
+    font-size: 21px;
+    line-height: 25px;
+  }
 }
 
 .travelmates__show-all {

@@ -23,6 +23,11 @@
 
 .directions__description {
   color: #444444;
+
+  @media (min-width: 720px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 
 .directions__show-all {

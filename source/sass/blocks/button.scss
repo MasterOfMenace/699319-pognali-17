@@ -8,4 +8,9 @@
   color: #1d2e5b;
 
   border-radius: 10px;
+
+  @media (min-width: 720px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }

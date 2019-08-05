@@ -14,8 +14,20 @@
   list-style: none;
 }
 
+.tariffs__description {
+  @media (min-width: 728px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
 .tariffs__link {
   font-weight: 700;
   line-height: 16px;
   color: #192144;
+
+  @media (min-width: 728px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
