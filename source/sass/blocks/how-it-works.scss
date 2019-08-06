@@ -2,6 +2,13 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 728px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
 }
 
 .how-it-works__item {
@@ -10,7 +17,19 @@
   font-weight: 700;
   color: #161c35;
 
+  box-sizing: border-box;
   padding: 23px 95px 23px 25px;
+
+  @media (min-width: 728px) {
+    font-size: 24px;
+    line-height: 24px;
+    width: 344px;
+    padding: 31px 0 60px 34px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 315px;
+  }
 }
 
 .how-it-works__item--first {

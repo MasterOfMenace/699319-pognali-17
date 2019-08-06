@@ -1,6 +1,6 @@
 .site-list {
-  margin: 0;
-  padding: 0;
+  // margin: 0;
+  // padding: 0;
 
   list-style: none;
 
@@ -8,6 +8,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: 1200px) {
+    flex-direction: row;
+    width: auto;
+  }
 }
 
 .site-list__item a {
@@ -16,4 +21,10 @@
   line-height: 36px;
   text-transform: uppercase;
   color: #192144;
+
+  @media (min-width: 1200px) {
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

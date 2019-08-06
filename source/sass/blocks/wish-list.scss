@@ -7,6 +7,11 @@
   line-height: 18px;
   color: #1d2e5b;
   text-transform: uppercase;
+
+  @media (min-width: 728px) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .wish-list__item {

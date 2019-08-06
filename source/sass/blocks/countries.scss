@@ -6,10 +6,25 @@ $count-color: transparentize(#444444, 0.7);
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 1200px) {
+    width: 630px;
+  }
 }
 
 .countries__item {
   background-color: #ffffff;
+
+  @media (min-width: 728px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.countries__img {
+  @media (min-width: 728px) {
+    order: 2;
+  }
 }
 
 .countries__title {
@@ -17,17 +32,26 @@ $count-color: transparentize(#444444, 0.7);
   line-height: 21px;
   font-weight: 700;
   color: #161c35;
+
+  @media (min-width: 728px) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .countries__description {
-  line-height: $count-lineheight;
-  font-weight: $count-fontweight;
+  line-height: 18px;
+  font-weight: 500;
   color: $count-color;
+
+  @media (min-width: 728px) {
+    font-size: 20px;
+  }
 }
 
 .countries__amount {
   padding-left: 20px;
-  line-height: $count-lineheight;
-  font-weight: $count-fontweight;
+  line-height: 18px;
+  font-weight: 500;
   color: $count-color;
 }

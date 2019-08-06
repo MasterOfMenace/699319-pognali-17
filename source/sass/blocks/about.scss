@@ -1,13 +1,49 @@
 .about {
-  background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-image: url("../../img/about-mobile@1x.png");
   background-position: center center;
   background-repeat: no-repeat;
+
+  @media (min-width: 728px) {
+    min-height: 620px;
+    background-image: none;
+    display: flex;
+  }
 }
 
-.about__slogan {
-  font-size: 36px;
-  line-height: 40px;
+.about__wrapper {
+  @media (min-width: 728px) {
+    width: 350px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 690px;
+  }
+}
+
+.about__title {
+  @include section-title;
+}
+
+.about__description--first {
+  @media (min-width: 728px) {
+    font-size: 28px;
+    line-height: 33px;
+  }
+}
+
+.about__description--second {
   font-weight: 700;
-  margin: 0;
-  padding: 0;
+
+  @media (min-width: 728px) {
+    font-size: 21px;
+    line-height: 25px;
+  }
+}
+
+.about__link {
+  display: none;
+
+  @media (min-width: 728px) {
+    display: inline-block;
+  }
 }
