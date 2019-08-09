@@ -8,18 +8,71 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
-  color: #192144;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    width: 688px;
+    font-size: 28px;
+    line-height: 28px;
+  }
 
   @media (min-width: 1200px) {
     // display: none;
+    margin: 0;
+    display: flex;
+    width: auto;
+
+    span {
+      display: none;
+    }
   }
 }
 
 .contacts-list__item {
-  padding: 17px 0 17px 60px;
+  position: relative;
+  padding: 11px 0 11px 60px;
 }
 
+.contacts-list__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  background-color: #121936;
+}
+
+.contacts-list__phone,
 .contacts-list__email {
   color: #192144;
+
+  &:hover {
+    color: #ffbd30;
+
+    path {
+      fill: #ffbd30;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts-list__phone-icon,
+.contacts-list__email-icon {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 18px;
+  height: 18px;
+
+  path {
+    fill: #ffd74b;
+  }
 }

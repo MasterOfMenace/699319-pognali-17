@@ -1,22 +1,48 @@
 .about {
+  min-height: 353px;
   background-image: url("../../img/about-mobile@1x.png");
   background-position: center center;
   background-repeat: no-repeat;
 
   @media (min-width: 728px) {
     min-height: 620px;
-    background-image: none;
     display: flex;
+    padding: 0 25px;
+
+    background-image: none;
+    background-color: #192144;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 40px;
+      z-index: -1;
+
+      width: 688px;
+      height: 213px;
+      border-radius: 10px;
+      background-color: #141b3b;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: 1320px;
   }
 }
 
 .about__wrapper {
   @media (min-width: 728px) {
-    width: 350px;
+    width: 344px;
+    padding: 0 5px 0 35px;
   }
 
   @media (min-width: 1200px) {
     width: 690px;
+    box-sizing: border-box;
+    padding-left: 60px;
   }
 }
 
@@ -38,6 +64,10 @@
     font-size: 21px;
     line-height: 25px;
   }
+
+  @media (min-width: 1200px) {
+    padding-right: 100px;
+  }
 }
 
 .about__link {
@@ -45,5 +75,17 @@
 
   @media (min-width: 728px) {
     display: inline-block;
+    padding: 30px 120px 28px 34px;
+  }
+}
+
+.about__image {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 376px;
+    height: 548px;
+    padding-top: 50px;
   }
 }
