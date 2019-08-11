@@ -3,26 +3,72 @@
   flex-direction: column;
   background-color: #edeff6;
   color: #000000;
+  padding-bottom: 30px;
 
   @media (min-width: 1200px) {
-    position: relative;
+    // position: relative;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding-top: 161px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+  }
+}
+
+.directions__wrapper {
+  padding-top: 70px;
+  width: 270px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: auto;
+    margin: 0;
+  }
+
+  @media (min-width: 1200px) {
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding-left: 110px;
+    padding-right: 180px;
+    padding-top: 0;
+  }
+}
+
+.directions__wrapper-elements {
+  width: 270px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    width: 688px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1320px;
     flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
 
-.directions__wrapper {
-  @media (min-width: 1200px) {
-    width: 630px;
-  }
-}
-
 .directions__title {
   @include section-title;
+
+  margin: 0;
+  padding-bottom: 20px;
+
+  @media (min-width: 1200px) {
+    padding: 0;
+  }
 }
 
 .directions__description {
   color: #444444;
+  margin: 0;
+  padding-bottom: 65px;
 
   @media (min-width: 720px) {
     font-size: 28px;
@@ -31,13 +77,28 @@
 }
 
 .directions__show-all {
-  display: inline-block;
-  padding: 24px 142px 24px 24px;
-  // order: 4;
+  // display: inline-block;
+  padding: 24px;
+  margin-top: 15px;
 
   @media (min-width: 1200px) {
-    position: absolute;
-    bottom: 0;
-    right: 355px;
+    // position: absolute;
+    // bottom: 0;
+    // right: 355px;
+  }
+}
+
+.directions__show-all--mobile {
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.directions__show-all--desktop {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: inline-block;
+    margin-right: 60px;
   }
 }

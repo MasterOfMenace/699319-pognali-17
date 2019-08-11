@@ -1,16 +1,17 @@
 .about {
   min-height: 353px;
-  background-image: url("../../img/about-mobile@1x.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+  // background-image: url("../../img/about-mobile@1x.png");
+  // background-position: center center;
+  // background-repeat: no-repeat;
+  background-color: #edeff6;
 
   @media (min-width: 728px) {
     min-height: 620px;
-    display: flex;
-    padding: 0 25px;
+    // display: flex;
+    // padding: 0 25px;
 
     background-image: none;
-    background-color: #192144;
+    // background-color: #192144;
     position: relative;
     z-index: 1;
 
@@ -24,12 +25,23 @@
       width: 688px;
       height: 213px;
       border-radius: 10px;
-      background-color: #141b3b;
+      // background-color: #141b3b;
     }
   }
 
   @media (min-width: 1200px) {
-    width: 1320px;
+    // width: 1320px;
+    // margin: 0 auto;
+    // padding: 0;
+    padding: 0;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 213px;
+      height: 213px;
+    }
   }
 }
 
@@ -42,18 +54,28 @@
   @media (min-width: 1200px) {
     width: 690px;
     box-sizing: border-box;
-    padding-left: 60px;
+    padding: 60px 0 0 70px;
   }
 }
 
 .about__title {
   @include section-title;
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 0 0 60px 0;
+  }
 }
 
 .about__description--first {
   @media (min-width: 728px) {
     font-size: 28px;
     line-height: 33px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 0 0 45px 0;
   }
 }
 
@@ -66,7 +88,8 @@
   }
 
   @media (min-width: 1200px) {
-    padding-right: 100px;
+    margin: 0;
+    padding: 0 145px 85px 0;
   }
 }
 
@@ -87,5 +110,29 @@
     width: 376px;
     height: 548px;
     padding-top: 50px;
+  }
+}
+
+.about__wrapper-background {
+  width: 100%;
+  background-color: #192144;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 1200px) {
+    background-image: none;
+  }
+}
+
+.about__wrapper-elements {
+  display: flex;
+
+  @media (min-width: 1200px) {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 70px;
   }
 }

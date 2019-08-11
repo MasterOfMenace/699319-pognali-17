@@ -4,26 +4,39 @@ $count-color: transparentize(#444444, 0.7);
 
 .countries {
   list-style: none;
-  margin: 0;
   padding: 0;
+  // width: 270px;
+  // margin: 0 auto;
 
   @media (min-width: 1200px) {
     width: 630px;
+    padding-left: 70px;
+    box-sizing: border-box;
+    margin: 0;
   }
 }
 
 .countries__item {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
 
-  @media (min-width: 728px) {
-    display: flex;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row-reverse;
     justify-content: space-between;
   }
 }
 
 .countries__img {
-  @media (min-width: 728px) {
-    order: 2;
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    // order: 2;
   }
 }
 
@@ -32,6 +45,7 @@ $count-color: transparentize(#444444, 0.7);
   line-height: 21px;
   font-weight: 700;
   color: #161c35;
+  margin: 0;
 
   @media (min-width: 728px) {
     font-size: 24px;
@@ -39,10 +53,25 @@ $count-color: transparentize(#444444, 0.7);
   }
 }
 
+.countries__wrapper {
+  border-radius: 10px;
+  margin-top: -20px;
+  padding: 30px 22px 25px 24px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    flex-direction: column;
+  }
+}
+
 .countries__description {
   line-height: 18px;
   font-weight: 500;
   color: $count-color;
+  margin: 0;
 
   @media (min-width: 728px) {
     font-size: 20px;
@@ -50,8 +79,26 @@ $count-color: transparentize(#444444, 0.7);
 }
 
 .countries__amount {
-  padding-left: 20px;
+  // padding-left: 20px;
   line-height: 18px;
   font-weight: 500;
   color: $count-color;
+
+  @media (min-width: 768px) {
+    margin-top: 25px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.countries__amount-picture {
+  width: 11px;
+  height: 11px;
+  opacity: 0.1;
+
+  @media (min-width: 768px) {
+    width: 20px;
+    height: 20px;
+  }
 }

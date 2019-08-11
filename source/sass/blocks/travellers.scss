@@ -9,10 +9,12 @@
   @media (min-width: 728px) {
     display: flex;
     justify-content: space-between;
+    padding: 0 35px 0 35px;
   }
 
   @media (min-width: 1200px) {
     width: 630px;
+    padding: 0;
   }
 }
 
@@ -26,11 +28,32 @@
 
 .travellers__item {
   background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+
+  @media (min-width: 768px) {
+    width: 285px;
+    margin: 0;
+  }
 }
 
 .travellers__level {
-  background-color: transparentize(#000000, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   color: #ffffff;
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 16px;
+  left: 16px;
 }
 
 .travellers__level--transparent {
@@ -60,12 +83,30 @@
   color: #444444;
 }
 
+.travellers__image {
+  border-radius: 10px;
+
+  @media (min-width: 768px) {
+    width: 285px;
+    height: 285px;
+  }
+}
+
+.travellers__item-wrapper {
+  padding: 25px 45px 20px 45px;
+
+  @media (min-width: 768px) {
+    padding: 25px 30px 20px 30px;
+  }
+}
+
 .travellers__name {
-  margin: 0;
+  margin: 0 0 15px 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
   color: #1d2e5b;
+  padding-left: 20px;
 
   @media (min-width: 728px) {
     font-size: 24px;
@@ -74,6 +115,9 @@
 }
 
 .travellers__hashtags {
+  margin: 0 0 15px 0;
+  text-align: center;
+
   @media (min-width: 728px) {
     font-size: 20px;
     line-height: 24px;

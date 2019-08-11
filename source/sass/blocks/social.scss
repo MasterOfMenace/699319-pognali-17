@@ -24,6 +24,23 @@
   padding: 0 15px;
 }
 
+.social__item--gold-icons {
+  padding: 0;
+}
+
+.social__link--gold-icons {
+  background-color: #ffd74b;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  @media (min-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 .social__icon {
   path {
     opacity: 0.3;
@@ -42,5 +59,14 @@
   &--instagram {
     width: 18px;
     height: 18px;
+  }
+}
+
+.social__icon--gold-icons {
+  margin: auto;
+  fill: #1d2e5b;
+
+  path {
+    opacity: 1;
   }
 }
