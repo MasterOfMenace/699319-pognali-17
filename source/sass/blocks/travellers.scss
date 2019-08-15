@@ -23,6 +23,7 @@
 
   @media (min-width: 768px) {
     padding: 0;
+    width: 688px;
   }
 
   @media (min-width: 1200px) {
@@ -47,7 +48,8 @@
 
 .travellers__item--inner-page {
   @media (min-width: 768px) {
-    width: auto;
+    width: inherit;
+    margin-bottom: 40px;
   }
 }
 
@@ -118,6 +120,16 @@
   @media (min-width: 768px) {
     width: 285px;
     height: 285px;
+  }
+
+  &--inner-page {
+    border-radius: 50%;
+
+    @media (min-width: 768px) {
+      width: 190px;
+      height: 190px;
+      border-radius: 15px;
+    }
   }
 }
 
@@ -194,7 +206,7 @@
     @media (min-width: 768px) {
       position: absolute;
       top: 80px;
-      left: 322px;
+      left: 231px;
       width: 230px;
       text-align: left;
     }
@@ -202,11 +214,7 @@
 }
 
 .travellers__likes {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #161c35;
-  margin: 0;
+  margin-left: -40px;
 
   @media (min-width: 768px) {
     position: absolute;
@@ -292,12 +300,10 @@
   margin-bottom: 20px;
 
   @media (min-width: 768px) {
-    /* order: 4; */
     position: absolute;
-    bottom: 120px;
-    left: 319px;
-    /* display: block; */
-    padding: 10px 30px 10px 30px;
+    bottom: 95px;
+    left: 232px;
+    padding: 10px 33px 10px 33px;
     font-size: 20px;
     border-radius: 25px;
     margin: 0;

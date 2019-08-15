@@ -22,6 +22,9 @@
   padding-top: 40px;
   padding-bottom: 30px;
   z-index: 1;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 
   &--main-page::before {
     content: "";
@@ -50,9 +53,10 @@
   @media (min-width: 768px) {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 688px;
     padding-top: 80px;
-    padding-bottom: 90px;
+    padding-bottom: 60px;
   }
 
   @media (min-width: 1200px) {
@@ -149,6 +153,7 @@
   text-transform: uppercase;
 
   padding-left: 35px;
+  margin-bottom: 40px;
 }
 
 .travelmates__show-more-icon {
