@@ -12,6 +12,10 @@
     padding-bottom: 25px;
     padding-left: 25px;
   }
+
+  @media (min-width: 1200px) {
+    width: 975px;
+  }
 }
 
 .pagination__list {

@@ -185,7 +185,6 @@
 
   @media (min-width: 768px) {
     width: auto;
-    position: relative;
   }
 }
 
@@ -218,8 +217,9 @@
 
   @media (min-width: 768px) {
     position: absolute;
-    bottom: 23px;
-    right: -30px;
+    bottom: 95px;
+    right: 217px;
+    margin: 0;
   }
 }
 
