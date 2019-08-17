@@ -7,8 +7,17 @@
   &--inner-page {
     padding: 0;
 
-    @media(min-width: 768px) {
+    @media (min-width: 768px) {
       flex-direction: column;
+      height: 120px;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (min-width: 1200px) {
+      flex-direction: row;
+      height: auto;
+      width: 120px;
     }
   }
 }
@@ -25,16 +34,18 @@
 }
 
 .transport-list__item--circle-button {
-  width: 32px;
-  height: 32px;
-  background-color: #edeff6;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @media (max-width: 320px) {
+    width: 32px;
+    height: 32px;
+    background-color: #edeff6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  svg {
-    transform: scale(0.75);
+    svg {
+      transform: scale(0.75);
+    }
   }
 }
 
