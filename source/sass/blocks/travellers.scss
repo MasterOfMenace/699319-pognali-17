@@ -334,6 +334,7 @@
 .travellers__item-bottom {
   padding-left: 25px;
   padding-right: 20px;
+  margin-bottom: 15px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -389,10 +390,16 @@
   }
 }
 
-.travellers__level-wrapper {
+.travellers__level {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &--main-page {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
 }
 
 .travellers__invite {
