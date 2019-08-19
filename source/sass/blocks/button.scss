@@ -11,8 +11,13 @@
 
   &__icon {
     position: absolute;
-    top: 34px;
-    right: 35px;
+    top: 26px;
+    right: 23px;
+
+    @media (min-width: 768px) {
+      top: 34px;
+      right: 35px;
+    }
 
     polygon {
       fill: #1d2e5b;

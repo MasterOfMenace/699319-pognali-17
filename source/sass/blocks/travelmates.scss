@@ -51,9 +51,9 @@
   }
 
   @media (min-width: 768px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // display: flex;
+    // flex-direction: column;
+    align-items: stretch;
     width: 688px;
     padding-top: 80px;
     padding-bottom: 60px;
@@ -66,6 +66,12 @@
     justify-content: space-between;
     padding-top: 130px;
     padding-bottom: 135px;
+  }
+}
+
+.travelmates__wrapper-elements--main-page {
+  @media (min-width: 1200px) {
+    flex-direction: row;
   }
 }
 
@@ -118,6 +124,7 @@
 }
 
 .travelmates__show-all {
+  position: relative;
   padding: 24px 132px 24px 24px;
   margin-top: 10px;
 }
