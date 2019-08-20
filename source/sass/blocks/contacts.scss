@@ -1,0 +1,113 @@
+.contacts {
+  background-color: #ffd74b;
+
+  iframe {
+    width: 100%;
+    border: none;
+    margin-top: 180px;
+  }
+}
+
+.contacts__phone-email-wrapper {
+  width: 270px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    width: 688px;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
+  }
+}
+
+.contacts__phone-email-background {
+  // min-height: 200px; //не забыть
+  background-color: #192144;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.contacts__promo {
+  margin: 0;
+  white-space: pre-line;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 33px;
+    white-space: normal;
+  }
+}
+
+.contacts__contacts-list {
+  margin: 20px 0 30px 0;
+}
+
+.contacts__address-route-link-background {
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: #ffd74b;
+  z-index: 7000;
+  width: 100%;
+  position: absolute;
+}
+
+.contacts__address-route-link-wrapper {
+  width: 270px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 35px;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    width: 688px;
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+}
+
+.contacts__address-wrapper {
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.contacts__address-icon {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+  background-color: #121936;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    fill: #ffd74b;
+  }
+}
+
+.contacts__address {
+  margin: 0;
+  text-transform: uppercase;
+  color: #192144;
+  font-weight: 700;
+  white-space: pre-line;
+
+  @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 28px;
+    white-space: normal;
+  }
+}
+
+.contacts__route-link {
+  display: block;
+  border: 3px solid;
+  box-sizing: border-box;
+  padding: 21px 0 18px 21px;
+}
