@@ -49,3 +49,10 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.container {
+  @media (min-width: 1200px) {
+    width: 1320px;
+    margin: 0 auto;
+  }
+}

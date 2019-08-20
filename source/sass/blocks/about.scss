@@ -1,42 +1,99 @@
 .about {
-  background-image: url("../../img/about-mobile@1x.png");
-  background-position: center center;
-  background-repeat: no-repeat;
+  background-color: #edeff6;
 
   @media (min-width: 728px) {
     min-height: 620px;
+    // display: flex;
+    // padding: 0 25px;
+
     background-image: none;
-    display: flex;
+    // background-color: #192144;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 40px;
+      z-index: -1;
+
+      width: 688px;
+      height: 213px;
+      border-radius: 10px;
+      // background-color: #141b3b;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    // width: 1320px;
+    // margin: 0 auto;
+    // padding: 0;
+    padding: 0;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 213px;
+      height: 213px;
+    }
   }
 }
 
 .about__wrapper {
+  padding: 0 30px 85px 25px;
+
   @media (min-width: 728px) {
-    width: 350px;
+    width: 344px;
+    padding: 0 5px 0 35px;
   }
 
   @media (min-width: 1200px) {
     width: 690px;
+    box-sizing: border-box;
+    padding: 60px 0 0 70px;
   }
 }
 
 .about__title {
   @include section-title;
+  margin: 0;
+  margin-top: 30px;
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 0 0 60px 0;
+  }
 }
 
 .about__description--first {
+  margin: 0;
+  padding: 20px 0;
+
   @media (min-width: 728px) {
     font-size: 28px;
     line-height: 33px;
   }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 0 0 45px 0;
+  }
 }
 
 .about__description--second {
+  margin: 0;
   font-weight: 700;
 
   @media (min-width: 728px) {
     font-size: 21px;
     line-height: 25px;
+  }
+
+  @media (min-width: 1200px) {
+    margin: 0;
+    padding: 0 145px 85px 0;
   }
 }
 
@@ -45,5 +102,47 @@
 
   @media (min-width: 728px) {
     display: inline-block;
+    padding: 30px 120px 28px 34px;
+  }
+}
+
+.about__image {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: block;
+    width: 376px;
+    height: 548px;
+    padding-top: 50px;
+  }
+}
+
+.about__wrapper-background {
+  width: 100%;
+  background-color: #192144;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 1200px) {
+    background-image: none;
+  }
+}
+
+.about__wrapper-elements {
+  width: 270px;
+  margin: 0 auto;
+  display: flex;
+
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 70px;
   }
 }

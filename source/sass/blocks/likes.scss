@@ -1,0 +1,52 @@
+.likes {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #161c35;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.likes__heart {
+  width: 31px;
+  height: 31px;
+  background-color: #edeff6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+
+  @media (min-width: 768px) {
+    width: 50px;
+    height: 50px;
+  }
+
+  svg {
+    fill: #192144;
+    fill-opacity: 0.3;
+
+    @media (min-width: 768px) {
+      width: 20px;
+      height: 17px;
+    }
+  }
+
+  &--active {
+    background-color: #f9eaea;
+
+    svg {
+      fill: #f02323;
+      fill-opacity: 1;
+    }
+  }
+}
+
+.likes__count {
+  margin: 0;
+}

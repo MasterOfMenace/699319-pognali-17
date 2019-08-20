@@ -1,27 +1,44 @@
 .user-list {
   list-style: none;
 
-  // margin: 0;
-  padding: 0;
   width: 270px;
 
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
+// .user-list--for-header {
+//   width: auto;
+//   margin: 0;
+//   padding: 0;
+//   display: block;
+
+//   & .user-list__login {
+//     padding: 7px 40px 5px 33px;
+//   }
+// }
+
 .user-list__login {
-  display: inline-block;
+  display: block;
   background-color: #ffd74b;
+  width: auto;
 
   font-size: 17px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
   color: #161c35;
+  text-align: center;
 
-  padding: 18px 81px 16px 77px;
+  padding: 10px;
 
-  border-radius: 23px;
+  border-radius: 25px;
+}
+
+.user-list__login:hover {
+  background-color: #ffbd30;
+}
+
+.user-list__login:active {
+  color: transparentize(#161c35, 0.3);
 }
