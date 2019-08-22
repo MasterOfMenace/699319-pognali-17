@@ -39,14 +39,16 @@
 .page-footer__logo {
   text-align: center;
 
-  @media (min-width: 768px) {
-    width: 164px;
-    height: 42px;
-  }
+  img {
+    @media (min-width: 768px) {
+      width: 164px;
+      height: 42px;
+    }
 
-  @media (min-width: 1200px) {
-    width: 198px;
-    height: 52px;
+    @media (min-width: 1200px) {
+      width: 198px;
+      height: 52px;
+    }
   }
 }
 
