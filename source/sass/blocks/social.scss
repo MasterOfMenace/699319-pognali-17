@@ -42,9 +42,8 @@
 }
 
 .social__icon {
-  path {
-    opacity: 0.3;
-  }
+
+  opacity: 0.3;
 
   &--facebook {
     width: 11px;
@@ -65,8 +64,8 @@
 .social__icon--gold-icons {
   margin: auto;
   fill: #1d2e5b;
+  opacity: 1;
 
-  path {
-    opacity: 1;
-  }
+  // path {
+  // }
 }

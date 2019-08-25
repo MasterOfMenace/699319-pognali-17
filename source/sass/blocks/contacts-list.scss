@@ -28,6 +28,12 @@
   }
 }
 
+.contacts-list--yellow {
+  span {
+    color: #ffd74b;
+  }
+}
+
 // .contacts-list--for-header {
 //   display: flex;
 //   margin: 0;
@@ -96,7 +102,5 @@
   width: 18px;
   height: 18px;
 
-  path {
-    fill: #ffd74b;
-  }
+  fill: #ffd74b;
 }

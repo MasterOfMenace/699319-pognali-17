@@ -5,6 +5,18 @@
   }
 }
 
+.page-main__columns-wrapper {
+  @media (min-width: 1200px) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 77px;
+  }
+}
+
 .page-main--silver {
   background-color: #edeff6;
 }

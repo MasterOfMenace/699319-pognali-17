@@ -22,7 +22,25 @@
 }
 
 .wish-list__item {
+  position: relative;
   padding-left: 40px;
   // padding-top: 6px;
   padding-bottom: 13px;
+
+  @media (min-width: 768px) {
+    padding-right: 29px;
+    padding-left: 50px;
+  }
+}
+
+.wish-list__flag {
+  position: absolute;
+  left: 0;
+  top: -1px;
+
+  @media (min-width: 768px) {
+    width: 35px;
+    height: 24px;
+    top: 2px;
+  }
 }
