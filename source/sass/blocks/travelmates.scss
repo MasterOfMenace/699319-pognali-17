@@ -7,6 +7,12 @@
 
 .travelmates--inner-page {
   background-color: #edeff6;
+
+  @media (min-width: 1200px) {
+    width: 975px;
+    padding-right: 25px;
+    box-sizing: border-box;
+  }
 }
 
 .travelmates--main-page {
@@ -25,6 +31,12 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  // @media (min-width: 1200px) {
+  //   margin: 0;
+  //   width: auto;
+  //   padding-top: 0;
+  // }
 
   &--main-page::before {
     content: "";
@@ -60,12 +72,15 @@
   }
 
   @media (min-width: 1200px) {
-    width: 1320px;
+    // width: 1320px;
     position: relative;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 130px;
+    // padding-top: 130px;
     padding-bottom: 135px;
+    margin: 0;
+    width: auto;
+    padding-top: 0;
   }
 }
 

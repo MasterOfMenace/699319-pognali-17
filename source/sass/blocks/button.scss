@@ -13,14 +13,11 @@
     position: absolute;
     top: 26px;
     right: 23px;
+    fill: #1d2e5b;
 
     @media (min-width: 768px) {
       top: 34px;
       right: 35px;
-    }
-
-    polygon {
-      fill: #1d2e5b;
     }
   }
 

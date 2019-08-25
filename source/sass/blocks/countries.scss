@@ -17,6 +17,7 @@ $count-color: transparentize(#444444, 0.7);
 }
 
 .countries__item {
+  position: relative;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -65,7 +66,23 @@ $count-color: transparentize(#444444, 0.7);
   }
 }
 
+.countries__flag {
+  position: absolute;
+  top: 84px;
+  left: 25px;
+
+  @media (min-width: 768px) {
+    width: 70px;
+    height: 47px;
+    top: 16px;
+    left: initial;
+    right: 150px;
+  }
+  // transform: scale(0.5);
+}
+
 .countries__wrapper {
+  // position: relative;
   border-radius: 10px;
   margin-top: -20px;
   padding: 30px 22px 25px 24px;
