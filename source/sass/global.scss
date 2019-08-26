@@ -18,6 +18,11 @@ img {
   height: auto;
 }
 
+.form-page {
+  color: #444444;
+  font-weight: 400;
+}
+
 //обводки
 // body > * {
 //   background: rgba(255, 0, 0, 0.3);
@@ -50,9 +55,9 @@ a {
   overflow: hidden;
 }
 
-.container {
-  @media (min-width: 1200px) {
-    width: 1320px;
-    margin: 0 auto;
-  }
-}
+// .container {
+//   @media (min-width: 1200px) {
+//     width: 1320px;
+//     margin: 0 auto;
+//   }
+// }

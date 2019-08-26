@@ -2,15 +2,28 @@
   display: flex;
   flex-direction: column;
 
-  // background-image: url("../../img/globe-back-mobile@1x.jpg");
+  background-image: url("../../img/globe-back-mobile@1x.jpg");
   // background-position: center center;
-  // background-repeat: no-repeat;
+  background-position: bottom 473px center;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-image: url("../../img/globe-back-tablet@1x.jpg");
+    background-position: bottom 236px center;
+    background-color: #182044;
+  }
 
   @media (min-width: 1200px) {
     // flex-direction: row;
-    width: 1320px;
-    margin: 0 auto;
+    // width: 1320px;
+    // margin: 0 auto;
+    background-image: url("../../img/globe-back-desktop@1x.jpg");
+    background-position: bottom;
   }
+}
+
+.page-header--inner-page {
+  background-image: none;
 }
 
 .page-header__logo img {
@@ -40,6 +53,9 @@
   font-weight: 700;
   margin: 0 auto;
   margin-top: 50px;
+  // временно
+  margin-bottom: 267px;
+  //
   padding: 0;
   width: 237px;
   text-align: center;
@@ -48,6 +64,7 @@
     font-size: 60px;
     line-height: 70px;
     width: 400px;
+    margin-bottom: 95px;
   }
 
   @media (min-width: 1200px) {
@@ -56,19 +73,19 @@
   }
 }
 
-.page-header__slogan-background {
-  background-image: url("../../img/globe-back-mobile@1x.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
+// .page-header__slogan-background {
+//   background-image: url("../../img/globe-back-mobile@1x.jpg");
+//   background-position: center center;
+//   background-repeat: no-repeat;
 
-  @media (min-width: 768px) {
-    background-image: url("../../img/globe-back-tablet@1x.jpg");
-  }
+//   @media (min-width: 768px) {
+//     background-image: url("../../img/globe-back-tablet@1x.jpg");
+//   }
 
-  @media (min-width: 1200px) {
-    background-image: url("../../img/globe-back-desktop@1x.jpg");
-  }
-}
+//   @media (min-width: 1200px) {
+//     background-image: url("../../img/globe-back-desktop@1x.jpg");
+//   }
+// }
 
 // .page-header__logo-wrapper {
 //   padding-top: 25px;
@@ -88,6 +105,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // добавить центровку и это убрать
+    width: 1320px;
+    margin: 0 auto;
   }
 }
 
@@ -106,9 +126,10 @@
   }
 }
 
-.page-header__user-list {
-  margin: 0;
-  padding: 0;
+.page-header__user-contacts {
+  position: absolute;
+  top: -20px;
+  left: 25px;
 }
 
 /* .page-header__user-contacts {
@@ -149,14 +170,77 @@
 }
 
 .page-header__slogan-reviews-wrapper {
+
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 192px;
+    height: 255px;
+    position: absolute;
+    left: 79px;
+    bottom: 205px;
+    background-image: url("../../img/traveller-illustration-mobile@1x.png");
+    background-size: contain;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../../img/traveller-illustration-mobile@2x.png");
+    }
+
+    @media (min-width: 768px) {
+      width: 372px;
+      height: 471px;
+      left: 285px;
+      bottom: -20px;
+      background-image: url("../../img/traveller-illustration-tablet@1x.png");
+      background-size: contain;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../../img/traveller-illustration-tablet@2x.png");
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: 431px;
+      height: 640px;
+      bottom: -369px;
+      left: 612px;
+      background-image: url("../../img/traveller-illustration-desktop@1x.png");
+      background-size: contain;
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../../img/traveller-illustration-desktop@2x.png");
+      }
+    }
+  }
+
   @media (min-width: 1200px) {
     display: flex;
     justify-content: space-between;
+    // добавить центровку и это убрать
+    width: 1320px;
+    margin: 0 auto;
+    margin-top: 118px;
+    margin-bottom: 107px;
+  }
+}
+
+.page-header__review-contacts-wrapper {
+  position: relative;
+  background-color: #161c35;
+
+  @media (min-width: 768px) {
+    background: none;
   }
 }
 
 .page-header__review {
   padding: 30px 0 30px 0;
+
+  @media (min-width: 768px) {
+    padding: 0;
+    padding-bottom: 213px;
+  }
 }
 
 .page-header__how-it-works {
@@ -165,4 +249,14 @@
   @media (min-width: 728px) {
     padding-bottom: 100px;
   }
+
+  @media (min-width: 1200px) {
+    // добавить центровку и это убрать
+    width: 1320px;
+    margin: 0 auto;
+    padding-bottom: 123px;
+  }
 }
+
+// .container {
+// }

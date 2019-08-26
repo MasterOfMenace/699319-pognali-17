@@ -133,24 +133,24 @@
 //   border-radius: 50%;
 // }
 
-.search__list--transport {
-  display: flex;
-  justify-content: flex-start;
+// .search__list--transport {
+//   display: flex;
+//   justify-content: flex-start;
 
-  .search__list-item {
-    padding: 0;
-    width: auto;
-  }
-}
+//   .search__list-item {
+//     padding: 0;
+//     width: auto;
+//   }
+// }
 
-.search__list--transport label {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  background-color: white;
-  display: block;
-  border-radius: 50%;
-}
+// .search__list--transport label {
+//   position: relative;
+//   width: 32px;
+//   height: 32px;
+//   background-color: white;
+//   display: block;
+//   border-radius: 50%;
+// }
 
 .search__transport-icon {
   position: absolute;
@@ -176,14 +176,14 @@
   left: 8px;
 }
 
-.search__input--transport + label svg {
-  fill: #1d2e5b;
-  opacity: 0.15;
-}
+// .search__input--transport + label svg {
+//   fill: #1d2e5b;
+//   opacity: 0.15;
+// }
 
-.search__input--transport:checked + label svg {
-  opacity: 1;
-}
+// .search__input--transport:checked + label svg {
+//   opacity: 1;
+// }
 
 .search__input--checkbox:checked + label::after {
   content: "";
@@ -198,28 +198,28 @@
   top: 6px;
 }
 
-.search__input--transport:hover + label svg,
-.search__input--transport:focus + label svg {
-  fill: #101e44;
-  opacity: 0.3;
-}
+// .search__input--transport:hover + label svg,
+// .search__input--transport:focus + label svg {
+//   fill: #101e44;
+//   opacity: 0.3;
+// }
 
-.search__input--transport:checked:hover + label svg,
-.search__input--transport:checked:focus + label svg {
-  opacity: 1;
-}
+// .search__input--transport:checked:hover + label svg,
+// .search__input--transport:checked:focus + label svg {
+//   opacity: 1;
+// }
 
-.search__input--transport:active + label {
-  background-color: #e2e5f1;
-}
+// .search__input--transport:active + label {
+//   background-color: #e2e5f1;
+// }
 
-.search__input--transport:active + label svg {
-  opacity: 0.1;
-}
+// .search__input--transport:active + label svg {
+//   opacity: 0.1;
+// }
 
-.search__input--transport:checked:active + label svg {
-  opacity: 0.3;
-}
+// .search__input--transport:checked:active + label svg {
+//   opacity: 0.3;
+// }
 
 .search__input--checkbox:hover + label,
 .search__input--checkbox:focus + label,

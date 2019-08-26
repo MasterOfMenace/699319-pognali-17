@@ -1,0 +1,147 @@
+.transport-checkboxes-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+
+  label {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    display: block;
+    border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 43px;
+      height: 43px;
+    }
+  }
+}
+
+.transport-checkboxes-list--center {
+  padding: 0;
+  justify-content: center;
+
+  .transport-checkboxes-list__item {
+    padding: 0;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 8px;
+    }
+  }
+}
+
+.transport-checkboxes-list__item {
+  position: relative;
+  padding: 0;
+  // padding-left: 25px;
+  font-size: 15px;
+  padding-bottom: 4px;
+  flex-wrap: wrap;
+  width: auto;
+}
+
+.transport-checkboxes-list__checkbox + label::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  background-color: white;
+  border: none;
+  top: 0;
+  left: 0;
+}
+
+.transport-checkboxes-list__checkbox + label svg {
+  fill: #1d2e5b;
+  opacity: 0.15;
+}
+
+.transport-checkboxes-list__checkbox:checked + label svg {
+  opacity: 1;
+}
+
+.transport-checkboxes-list__checkbox:hover + label svg,
+.transport-checkboxes-list__checkbox:focus + label svg {
+  fill: #101e44;
+  opacity: 0.3;
+}
+
+.transport-checkboxes-list__checkbox:checked:hover + label svg,
+.transport-checkboxes-list__checkbox:checked:focus + label svg {
+  opacity: 1;
+}
+
+.transport-checkboxes-list__checkbox:active + label {
+  background-color: #e2e5f1;
+}
+
+.transport-checkboxes-list__checkbox:active + label svg {
+  opacity: 0.1;
+}
+
+.transport-checkboxes-list__checkbox:checked:active + label svg {
+  opacity: 0.3;
+}
+
+.transport-checkboxes-list__transport-icon {
+  position: absolute;
+}
+
+.transport-checkboxes-list__transport-icon--plane {
+  top: 9px;
+  left: 8px;
+  width: 14px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 10px;
+    width: 19px;
+    height: 21px;
+  }
+}
+
+.transport-checkboxes-list__transport-icon--bus {
+  top: 9px;
+  left: 10px;
+  width: 13px;
+  height: 16px;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 13px;
+    width: 17px;
+    height: 21px;
+  }
+}
+
+.transport-checkboxes-list__transport-icon--bike {
+  top: 7px;
+  left: 7px;
+  width: 19px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 9px;
+    width: 24px;
+    height: 21px;
+  }
+}
+
+.transport-checkboxes-list__transport-icon--run {
+  top: 8px;
+  left: 8px;
+  width: 15px;
+  height: 17px;
+
+  @media (min-width: $tablet-width) {
+    top: 11px;
+    left: 11px;
+    width: 20px;
+    height: 21px;
+  }
+}

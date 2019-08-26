@@ -29,6 +29,10 @@
   font-weight: 700;
   position: relative;
 
+  @media (min-width: $desktop-width) {
+    height: 190px;
+  }
+
   &::after {
     content: "";
     width: 175px;
@@ -40,4 +44,8 @@
     left: 0;
     z-index: 1;
   }
+}
+
+.page-main__background {
+  background-color: #edeff6;
 }

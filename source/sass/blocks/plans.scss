@@ -1,0 +1,41 @@
+.plans {
+  background-color: #dfe3f0;
+  padding-top: 30px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  // color: #1d2e5b;
+}
+
+// .plans__background {
+//   background-color: #dfe3f0;
+// }
+
+// .plans__list {
+//   list-style: none;
+//   margin: 0;
+//   padding: 0;
+// }
+
+
+.plans__myplans-wrapper {
+  width: $mobile-block-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-block-width;
+    padding: 55px 25px 74px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-block-width;
+    padding: 55px 0 65px 65px;
+  }
+}
+
+.plans__title {
+  @include section-title;
+  color: #1d2e5b;
+  margin: 0;
+  margin-bottom: 34px;
+}
