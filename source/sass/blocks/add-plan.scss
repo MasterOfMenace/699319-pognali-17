@@ -1,0 +1,102 @@
+.add-plan {
+  background-color: #d4d9eb;
+  width: $mobile-block-width;
+  margin: 0 auto;
+}
+
+.add-plan__title {
+  @include section-title;
+  color: #1d2e5b;
+  margin: 0;
+  margin-bottom: 34px;
+}
+
+// .add-plan__form {
+//   width: $mobile-block-width;
+//   margin: 0 auto;
+// }
+
+.add-plan__card {
+  background-color: #ffffff;
+  padding: 25px;
+  // display: flex;
+  // flex-direction: column;
+  // border: none;
+
+  h3 {
+    color: #1d2e5b;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0;
+  }
+}
+
+.add-plan__fieldset {
+  // background-color: #ffffff;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.add-plan__children {
+  position: relative;
+  // display: flex;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 40px;
+  font-size: 15px;
+  line-height: 15px;
+  font-weight: 400;
+}
+
+// .add-plan__checkbox-tick {
+//   display: none;
+//   position: absolute;
+//   width: 9px;
+//   height: 9px;
+
+//   fill: #192144;
+// }
+
+.add-plan__checkbox ~ label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  width: 26px;
+  height: 26px;
+
+  background: transparent;
+  border: 1px solid #cbced9;
+}
+
+.add-plan__checkbox + .add-plan__checkbox-tick {
+  display: none;
+}
+
+.add-plan__checkbox:checked + .add-plan__checkbox-tick {
+  display: block;
+  top: 8px;
+  left: 9px;
+  position: absolute;
+  width: 9px;
+  height: 9px;
+
+  fill: #192144;
+}
+
+.add-plan__next-step {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 20px;
+  color: #161c35;
+}

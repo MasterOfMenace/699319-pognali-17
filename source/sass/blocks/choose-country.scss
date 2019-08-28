@@ -1,0 +1,103 @@
+.choose-country {
+  width: 220px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.choose-country__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.choose-country__dropdown {
+  position: relative;
+  display: flex;
+  height: 42px;
+  padding-bottom: 25px;
+}
+
+.choose-country__dropdown--empty .choose-country__country-name{
+  flex-grow: 1;
+}
+
+.choose-country__dropdown--empty.choose-country__dropdown::after {
+  background: none;
+  border: 1px solid #cbced9;
+}
+
+.choose-country__country-name {
+  margin: 0;
+  padding: 12px 9px 11px 10px;
+  border: 1px solid #cbced9;
+  overflow: hidden;
+  width: 168px;
+  white-space: nowrap;
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* overflow-wrap: unset; */
+  position: relative;
+  // font-size: 14px;
+  // line-height: 18px;
+  // text-transform: uppercase;
+  // font-weight: 500;
+
+  svg {
+    position: absolute;
+    top: 18px;
+    right: 14px;
+  }
+}
+
+.choose-country__dropdown::after {
+  content: "";
+  box-sizing: border-box;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1d2e5b;
+  position: absolute;
+  top: 17px;
+  right: 50px;
+}
+
+.choose-country__country-flag {
+  padding: 9px;
+  border: 1px solid #cbced9;
+  box-sizing: border-box;
+  margin-left: -1px;
+  border-radius: 4px;
+}
+
+.choose-country__fade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37px;
+  height: 100%;
+  background-image: linear-gradient(to right, transparent 10%, white 30%);
+}
+
+.choose-country__down-arrow-wrapper {
+  position: absolute;
+  bottom: 2px;
+  right: 52px;
+}
+
+.choose-country__delete-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  border-radius: 50%;
+  background-color: #edeff6;
+  z-index: 2;
+}
+
+.choose-country__dropdown--add-country .choose-country__country-name {
+  background-color: #edeff6;
+}

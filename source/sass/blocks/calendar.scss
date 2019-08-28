@@ -1,0 +1,92 @@
+.calendar__month {
+  position: relative;
+  margin: 0;
+  padding: 12px 0 10px 0;
+  color: #1d2e5b;
+  text-align: center;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 700;
+  border-top: 1px solid #d4d9eb;
+  border-bottom: 1px solid #d4d9eb;
+}
+
+.calendar__table {
+  /* border: 1px solid black; */
+  border-collapse: collapse;
+  /* table-layout: fixed; */
+  width: 100%;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.calendar__table td {
+  border: 1px solid #d4d9eb;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+}
+
+.calendar__weekdays td {
+  border: none;
+}
+
+.calendar__weekend {
+  color: #ff5c23;
+}
+
+.calendar__day {
+  background-color: #edeff6;
+}
+
+.calendar__day--disabled {
+  background: transparent;
+  opacity: 0.3;
+}
+
+.calendar__day--chosen {
+  background-color: #1d2e5b;
+  color: #ffffff;
+}
+
+.calendar__day:hover {
+  cursor: pointer;
+  border: 2px solid #ff5c23;
+}
+
+.calendar__month-button {
+  position: absolute;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  svg {
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      opacity: 0.5;
+    }
+  }
+
+  &:active {
+    svg {
+      opacity: 0.1;
+    }
+  }
+}
+
+.calendar__month-button--left {
+  top: 12px;
+  left: 0;
+}
+
+.calendar__month-button--right {
+  top: 12px;
+  right: 0;
+}
