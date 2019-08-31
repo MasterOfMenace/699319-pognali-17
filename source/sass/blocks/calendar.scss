@@ -1,4 +1,7 @@
 .calendar__month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   margin: 0;
   padding: 12px 0 10px 0;
@@ -9,6 +12,12 @@
   font-weight: 700;
   border-top: 1px solid #d4d9eb;
   border-bottom: 1px solid #d4d9eb;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 22px 18px 22px 18px;
+  }
 }
 
 .calendar__table {
@@ -18,6 +27,11 @@
   width: 100%;
   font-size: 14px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .calendar__table td {
@@ -28,10 +42,27 @@
   text-align: center;
   vertical-align: middle;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 77px;
+    height: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 144px;
+    height: 72px;
+    text-align: left;
+    vertical-align: top;
+    padding: 15px;
+  }
 }
 
 .calendar__weekdays td {
   border: none;
+
+  @media (min-width: $desktop-width) {
+    height: 55px;
+  }
 }
 
 .calendar__weekend {
@@ -58,35 +89,40 @@
 }
 
 .calendar__month-button {
-  position: absolute;
-  border: none;
-  background: transparent;
   cursor: pointer;
+  width: 9px;
+  height: 18px;
+  border: none;
+  background-color: transparent;
+  opacity: 0.3;
 
-  svg {
-    opacity: 0.3;
+  @media (min-width: $tablet-width) {
+    width: 19px;
+    height: 34px;
   }
 
   &:hover,
   &:focus {
-    svg {
-      opacity: 0.5;
-    }
+    opacity: 0.5;
   }
 
   &:active {
-    svg {
-      opacity: 0.1;
-    }
+    opacity: 0.1;
   }
 }
 
 .calendar__month-button--left {
-  top: 12px;
-  left: 0;
+  // top: 12px;
+  // left: 0;
+  background-image: url("../../img/month-arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
 }
 
 .calendar__month-button--right {
-  top: 12px;
-  right: 0;
+  // top: 12px;
+  // right: 0;
+  background-image: url("../../img/month-arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 }

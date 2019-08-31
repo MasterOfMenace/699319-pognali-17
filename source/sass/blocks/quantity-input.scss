@@ -1,37 +1,74 @@
 .quantity-input {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   color: #1d2e5b;
   line-height: 16px;
   font-weight: 500;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 25px;
+    border-top: 1px solid #d6d9e6;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: 0;
+    //   width: 100%;
+    //   border-top: 1px solid #d6d9e6;
+    // }
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+    width: 500px;
+    padding: 0;
+    border: none;
+  }
 }
 
 .quantity-input__label {
   position: relative;
   text-transform: uppercase;
+  padding-bottom: 10px;
 
-  &::after {
-    // content: "Чел.";
-    position: absolute;
-    top: 0;
-    right: 0;
-    opacity: 0.3;
-    text-transform: uppercase;
+  @media (min-width: $tablet-width) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 1;
+    padding: 0;
+    // margin-right: auto;
+    width: 220px;
   }
 }
 
-.quantity-input__label--travelmates::after {
-  content: "Чел.";
-}
+.quantity-input__unit {
+  margin-left: auto;
+  opacity: 0.3;
+  text-transform: uppercase;
 
-.quantity-input__label--duration::after {
-  content: "Дн.";
+  @media (min-width: $desktop-width) {
+    order: 3;
+    margin: 0;
+    margin-left: 35px
+  }
 }
 
 .quantity-input__input-with-buttons-wrapper {
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    order: 2;
+  }
 }
 
 .quantity-input__button {
@@ -40,17 +77,45 @@
   background: transparent;
   border: none;
   display: flex;
+  height: 100%;
   opacity: 0.3;
 }
 
 .quantity-input__button--minus {
-  top: 21px;
-  left: 14px;
+  // padding-left: 14px;
+  width: 28px;
+  background-image: url("../../img/qty-minus-mobile.svg");
+  background-size: 14px 2px;
+  background-position: center right;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    background-image: url("../../img/qty-minus.svg");
+    background-size: 20px 2px;
+    background-position: center right;
+    background-repeat: no-repeat;
+  }
 }
 
 .quantity-input__button--plus {
-  top: 15px;
-  right: 14px;
+  width: 28px;
+  background-image: url("../../img/qty-plus-mobile.svg");
+  background-size: 14px 14px;
+  background-position: center left;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    background-image: url("../../img/qty-plus.svg");
+    background-size: 20px 20px;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
 }
 
 .quantity-input__input {
@@ -68,4 +133,8 @@
   box-sizing: border-box;
   border: 1px solid #cbced9;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px;
+  }
 }

@@ -12,9 +12,24 @@
   }
 }
 
+@mixin form-section-title {
+  font: {
+    weight: 700;
+    size: 24px;
+  }
+  line-height: 24px;
+  color: #1d2e5b;
+
+  @media (min-width: 720px) {
+    font-size: 36px;
+    line-height: 50px;
+  }
+}
+
 $mobile-block-width: 270px;
 $tablet-block-width: 688px;
 $desktop-block-width: 1320px;
+$only-mobile-width: 767px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
 $retina-dpi: 144dpi;

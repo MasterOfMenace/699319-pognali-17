@@ -1,31 +1,109 @@
 .choose-country {
   width: 220px;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  font-weight: 500;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+  }
 }
 
 .choose-country__list {
+  position: relative;
   margin: 0;
   padding: 0;
   list-style: none;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    border-top: 1px solid #d6d9e6;
+    padding-top: 40px;
+    padding-bottom: 50px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 135px;
+      height: 100%;
+      width: 1px;
+      background-color: #d6d9e6;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 60px;
+    padding-bottom: 55px;
+
+    &::before {
+      right: 240px;
+    }
+  }
+
+  // &::before {
+  //   @media (min-width: $tablet-width) {
+  //     content: "";
+  //     position: absolute;
+  //     top: 0;
+  //     right: 135px;
+  //     height: 100%;
+  //     width: 1px;
+  //     background-color: #d6d9e6;
+  //   }
+  // }
 }
 
 .choose-country__dropdown {
   position: relative;
   display: flex;
   height: 42px;
-  padding-bottom: 25px;
+
+  &:not(:last-child) {
+    padding-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    align-items: center;
+  }
 }
 
-.choose-country__dropdown--empty .choose-country__country-name{
+.choose-country__dropdown--empty .choose-country__country-name {
   flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: initial;
+  }
 }
 
-.choose-country__dropdown--empty.choose-country__dropdown::after {
-  background: none;
+.choose-country__dropdown--empty .choose-country__dropdown-button {
+  @media (max-width: $only-mobile-width) {
+    top: 4px;
+    right: 2px;
+  }
+
+  // @media (min-width: $tablet-width) {
+  //   top: 15px;
+  //   right: 250px;
+  // }
+}
+
+// .choose-country__dropdown--empty .choose-country__delete-btn {
+//   margin-left: auto;
+// }
+
+.choose-country__dropdown--empty.choose-country__dropdown::before {
+  // background: none;
+  background-color: #ffffff;
   border: 1px solid #cbced9;
+}
+
+.choose-country__dropdown--add-country.choose-country__dropdown::before {
+  // background: none;
+  background-color: #edeff6;
+  border: 1px solid #cbced9;
+}
+
+.choose-country__dropdown.choose-country__dropdown--add-country::after {
+  content: initial;
 }
 
 .choose-country__country-name {
@@ -37,57 +115,137 @@
   white-space: nowrap;
   box-sizing: border-box;
   border-radius: 4px;
-  /* overflow-wrap: unset; */
   position: relative;
-  // font-size: 14px;
-  // line-height: 18px;
-  // text-transform: uppercase;
-  // font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #1d2e5b;
 
-  svg {
-    position: absolute;
-    top: 18px;
-    right: 14px;
+  &::placeholder {
+    color: #1d2e5b;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 370px;
+    font-size: 20px;
+    line-height: 20px;
+    height: 70px;
+    padding: 27px;
+    margin-right: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 730px;
+    margin-right: 85px;
   }
 }
 
-.choose-country__dropdown::after {
+.choose-country__dropdown::before {
   content: "";
+  position: absolute;
+  top: 17px;
+  right: 50px;
+  z-index: 1;
   box-sizing: border-box;
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background-color: #1d2e5b;
-  position: absolute;
-  top: 17px;
-  right: 50px;
+
+  @media (min-width: $tablet-width) {
+    width: 15px;
+    height: 15px;
+    top: 25px;
+    right: 128px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 233px;
+  }
+}
+
+.choose-country__dropdown::after {
+  @media (max-width: $only-mobile-width) {
+    position: absolute;
+    bottom: 6px;
+    right: 52px;
+    content: "";
+    width: 5px;
+    height: 10px;
+    background-image: url("../../img/small-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.3;
+  }
 }
 
 .choose-country__country-flag {
-  padding: 9px;
+  // padding: 9px;
+  display: flex;
   border: 1px solid #cbced9;
   box-sizing: border-box;
   margin-left: -1px;
   border-radius: 4px;
-}
-
-.choose-country__fade {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 37px;
+  width: 53px;
   height: 100%;
-  background-image: linear-gradient(to right, transparent 10%, white 30%);
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    width: 70px;
+    height: 47px;
+  }
 }
 
-.choose-country__down-arrow-wrapper {
-  position: absolute;
-  bottom: 2px;
-  right: 52px;
+.choose-country__country-flag img {
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
+
+// .choose-country__fade
+.choose-country__dropdown-button {
+  position: absolute;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  top: 4px;
+  right: 56px;
+  width: 37px;
+  height: 37px;
+  background-image: linear-gradient(to right, transparent 10%, white 30%);
+
+  svg {
+    margin: auto;
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    right: 180px;
+    top: 15px;
+
+    svg {
+      width: 17px;
+      height: 9px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 310px;
+  }
+}
+
+// .choose-country__down-arrow-wrapper {
+//   position: absolute;
+//   bottom: 2px;
+//   right: 52px;
+// }
 
 .choose-country__delete-btn {
   position: absolute;
+  padding: 0;
   top: -10px;
   right: -10px;
   width: 21px;
@@ -96,8 +254,47 @@
   border-radius: 50%;
   background-color: #edeff6;
   z-index: 2;
+
+  svg {
+    opacity: 0.2;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: unset;
+    background: none;
+    border-radius: initial;
+    margin-left: auto;
+    // width: 18px;
+    // height: 18px;
+
+    svg {
+      width: 18px;
+      height: 18px;
+    }
+  }
 }
 
 .choose-country__dropdown--add-country .choose-country__country-name {
   background-color: #edeff6;
+}
+
+.choose-country__add-country-btn {
+  display: flex;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-left: 30px;
+  }
+
+  svg {
+    margin-left: 64px;
+    opacity: 0.3;
+    @media (min-width: $tablet-width) {
+      margin-left: auto;
+      margin-right: 30px;
+      width: 18px;
+      height: 18px;
+    }
+  }
 }

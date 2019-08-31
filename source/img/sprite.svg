@@ -47,6 +47,9 @@
   <symbol viewBox="0 0 10 14" id="button-icon">
     <polygon points="0,14 0,0.1 10,7.1 "/>
   </symbol>
+  <symbol viewBox="0 0 10 14" id="button-icon-left">
+    <polygon points="0,7.1 10,0.1 10,14 "/>
+  </symbol>
   <symbol viewBox="0 0 20 20" id="user-icon">
     <g>
       <g>
@@ -116,7 +119,7 @@
   <symbol viewBox="0 0 14 2" id="qty-icon-minus-mobile">
     <rect width="14" height="2"/>
   </symbol>
-  <symbol viewBox="0 0 14 2" id="qty-icon-plus-mobile">
+  <symbol viewBox="0 0 14 14" id="qty-icon-plus-mobile">
     <polygon points="8,6 8,0 6,0 6,6 0,6 0,8 6,8 6,14 8,14 8,8 14,8 14,6 "/>
   </symbol>
 </svg>
