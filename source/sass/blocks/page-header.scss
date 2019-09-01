@@ -1,30 +1,3 @@
-.page-header {
-  display: flex;
-  flex-direction: column;
-
-  background-image: url("../../img/globe-back-mobile@1x.jpg");
-  // background-position: center center;
-  background-position: bottom 473px center;
-  background-repeat: no-repeat;
-
-  // настраиваю меню
-  background-color: #182044;
-
-  @media (min-width: 768px) {
-    background-image: url("../../img/globe-back-tablet@1x.jpg");
-    background-position: bottom 236px center;
-    background-color: #182044;
-  }
-
-  @media (min-width: 1200px) {
-    // flex-direction: row;
-    // width: 1320px;
-    // margin: 0 auto;
-    background-image: url("../../img/globe-back-desktop@1x.jpg");
-    background-position: bottom;
-  }
-}
-
 .page-header--menu-open {
   background-color: #ffffff;
 
@@ -33,116 +6,23 @@
   }
 }
 
-.page-header--inner-page {
-  background-image: none;
-}
-
-// .page-header__logo--blue {
-//   display: none;
-// }
-
 .page-header__logo img {
   display: block;
   width: 100px;
   height: 19px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 166px;
     height: 42px;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     width: 200px;
     height: 52px;
   }
 }
 
-// .page-header__pognali-logo {
-//   width: 100px;
-//   height: 19px;
-// }
-
-.page-header__slogan {
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 700;
-  margin: 0 auto;
-  margin-top: 50px;
-  // временно
-  margin-bottom: 267px;
-  //
-  padding: 0;
-  width: 237px;
-  text-align: center;
-
-  @media (min-width: 768px) {
-    font-size: 60px;
-    line-height: 70px;
-    width: 400px;
-    margin-bottom: 95px;
-  }
-
-  @media (min-width: 1200px) {
-    margin: 0;
-    text-align: left;
-  }
-}
-
-// .page-header__slogan-background {
-//   background-image: url("../../img/globe-back-mobile@1x.jpg");
-//   background-position: center center;
-//   background-repeat: no-repeat;
-
-//   @media (min-width: 768px) {
-//     background-image: url("../../img/globe-back-tablet@1x.jpg");
-//   }
-
-//   @media (min-width: 1200px) {
-//     background-image: url("../../img/globe-back-desktop@1x.jpg");
-//   }
-// }
-
-// .page-header__logo-wrapper {
-//   padding-top: 25px;
-
-// @media (min-width: 1200px) {
-//   width: 1320px;
-//   margin: 0 auto;
-// }
-// }
-
-// .page-header__nav-wrapper {
-//   // width: 270px;
-//   // margin: 0 auto;
-//   // padding-top: 30px;
-
-//   // настраиваю меню
-//   width: 270px;
-//   margin: 0 auto;
-
-//   @media (min-width: $tablet-width) {
-//     width: 688px;
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-
-//   //настраиваю меню
-//   @media (min-width: 1200px) {
-//     display: flex;
-//     align-items: center;
-//     justify-content: space-between;
-//     // добавить центровку и это убрать
-//     width: 1320px;
-//     margin: 0 auto;
-//   }
-// }
-
 .page-header__main-menu {
-  // width: 270px;
-  // margin: 0 auto;
-  // padding-top: 30px;
-
-  // настраиваю меню
   width: 270px;
   margin: 0 auto;
   display: flex;
@@ -151,19 +31,11 @@
 
   @media (min-width: $tablet-width) {
     width: 688px;
-    // display: flex;
-    // flex-wrap: wrap;
   }
 
-  //настраиваю меню
-  @media (min-width: 1200px) {
-    // display: flex;
-    // align-items: center;
+  @media (min-width: $desktop-width) {
     justify-content: space-between;
-    // background-color: #161c35;
-    // добавить центровку и это убрать
     width: 1320px;
-    // margin: 0 auto;
   }
 }
 
@@ -175,7 +47,6 @@
 }
 
 .page-header__login-link {
-  // width: 270px;
   display: block;
   background-color: #ffd74b;
   width: 100%;
@@ -216,7 +87,7 @@
   padding: 0;
   margin: 50px 0 40px 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     margin: 90px 0 135px 0;
   }
 
@@ -229,7 +100,7 @@
 .page-header__social {
   margin-bottom: 40px;
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -251,21 +122,15 @@
 }
 
 .page-header__logo-wrapper {
-  // width: 270px;
-  // margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
 
-  @media (min-width: 768px) {
-    // width: 688px;
+  @media (min-width: $tablet-width) {
     order: -2;
   }
 }
 
 .page-header__main-menu-toggle {
-  // position: absolute;
-  // top: -13px;
-  // right: 25px;
   position: relative;
   margin-left: auto;
 
@@ -276,15 +141,12 @@
   cursor: pointer;
   border: none;
 
-  @media (min-width: 768px) {
-    // top: -35px;
-    // right: 50%;
-    // left: 50%;
+  @media (min-width: $tablet-width) {
     order: -2;
     margin-left: auto;
   }
 
-  @media (min-width: 1200px) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -309,7 +171,6 @@
 
     position: absolute;
     right: 0;
-    // top: 2px;
     width: 25px;
     height: 2px;
     background-color: #cccccc;
@@ -331,131 +192,3 @@
   left: 25px;
 }
 
-/* .page-header__user-contacts {
-  display: flex;
-  flex-direction: row-reverse;
-  width: 270px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
-
-  .contacts-list {
-    display: flex;
-    margin: 0;
-  }
-
-  .contacts-list__item::before {
-    width: 40px;
-    height: 40px;
-  }
-
-  .contacts-list__item--phone::before {
-    background-color: #ffbd30;
-  }
-
-  .contacts-list__item--email::before {
-    background-color: #ff8d30;
-  }
-
-  path {
-    fill: #161c35;
-  }
-} */
-
-.page-header__illustration {
-  margin: 10px auto 0 70px;
-}
-
-.page-header__slogan-reviews-wrapper {
-
-  position: relative;
-
-  &::before {
-    content: "";
-    width: 192px;
-    height: 255px;
-    position: absolute;
-    left: 79px;
-    bottom: 205px;
-    background-image: url("../../img/traveller-illustration-mobile@1x.png");
-    background-size: contain;
-
-    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-      background-image: url("../../img/traveller-illustration-mobile@2x.png");
-    }
-
-    @media (min-width: 768px) {
-      width: 372px;
-      height: 471px;
-      left: 285px;
-      bottom: -20px;
-      background-image: url("../../img/traveller-illustration-tablet@1x.png");
-      background-size: contain;
-
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../../img/traveller-illustration-tablet@2x.png");
-      }
-    }
-
-    @media (min-width: 1200px) {
-      width: 431px;
-      height: 640px;
-      bottom: -369px;
-      left: 612px;
-      background-image: url("../../img/traveller-illustration-desktop@1x.png");
-      background-size: contain;
-
-      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-        background-image: url("../../img/traveller-illustration-desktop@2x.png");
-      }
-    }
-  }
-
-  @media (min-width: 1200px) {
-    display: flex;
-    justify-content: space-between;
-    // добавить центровку и это убрать
-    width: 1320px;
-    margin: 0 auto;
-    margin-top: 118px;
-    margin-bottom: 107px;
-  }
-}
-
-.page-header__review-contacts-wrapper {
-  position: relative;
-  background-color: #161c35;
-
-  @media (min-width: 768px) {
-    background: none;
-  }
-}
-
-.page-header__review {
-  padding: 30px 0 30px 0;
-
-  @media (min-width: 768px) {
-    padding: 0;
-    padding-bottom: 213px;
-  }
-}
-
-.page-header__how-it-works {
-  padding-bottom: 40px;
-
-  @media (min-width: 728px) {
-    padding-bottom: 100px;
-  }
-
-  @media (min-width: 1200px) {
-    // добавить центровку и это убрать
-    width: 1320px;
-    margin: 0 auto;
-    padding-bottom: 123px;
-  }
-}
-
-// .container {
-// }
