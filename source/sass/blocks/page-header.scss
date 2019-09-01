@@ -7,6 +7,9 @@
   background-position: bottom 473px center;
   background-repeat: no-repeat;
 
+  // настраиваю меню
+  background-color: #182044;
+
   @media (min-width: 768px) {
     background-image: url("../../img/globe-back-tablet@1x.jpg");
     background-position: bottom 236px center;
@@ -22,9 +25,21 @@
   }
 }
 
+.page-header--menu-open {
+  background-color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    background-color: #161c35;
+  }
+}
+
 .page-header--inner-page {
   background-image: none;
 }
+
+// .page-header__logo--blue {
+//   display: none;
+// }
 
 .page-header__logo img {
   display: block;
@@ -42,10 +57,10 @@
   }
 }
 
-.page-header__pognali-logo {
-  width: 100px;
-  height: 19px;
-}
+// .page-header__pognali-logo {
+//   width: 100px;
+//   height: 19px;
+// }
 
 .page-header__slogan {
   font-size: 36px;
@@ -96,34 +111,217 @@
 // }
 // }
 
-.page-header__nav-wrapper {
+// .page-header__nav-wrapper {
+//   // width: 270px;
+//   // margin: 0 auto;
+//   // padding-top: 30px;
+
+//   // настраиваю меню
+//   width: 270px;
+//   margin: 0 auto;
+
+//   @media (min-width: $tablet-width) {
+//     width: 688px;
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+
+//   //настраиваю меню
+//   @media (min-width: 1200px) {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     // добавить центровку и это убрать
+//     width: 1320px;
+//     margin: 0 auto;
+//   }
+// }
+
+.page-header__main-menu {
   // width: 270px;
   // margin: 0 auto;
   // padding-top: 30px;
 
+  // настраиваю меню
+  width: 270px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 688px;
+    // display: flex;
+    // flex-wrap: wrap;
+  }
+
+  //настраиваю меню
   @media (min-width: 1200px) {
-    display: flex;
-    align-items: center;
+    // display: flex;
+    // align-items: center;
     justify-content: space-between;
+    // background-color: #161c35;
     // добавить центровку и это убрать
     width: 1320px;
-    margin: 0 auto;
+    // margin: 0 auto;
   }
 }
 
+.page-header__main-nav {
+  @media (min-width: $desktop-width) {
+    order: 2;
+    width: auto;
+  }
+}
 
-.page-header__nav-wrapper--menu-open {
+.page-header__login-link {
+  // width: 270px;
+  display: block;
+  background-color: #ffd74b;
+  width: 100%;
+  box-sizing: border-box;
+
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #161c35;
+  text-align: center;
+
+  padding: 10px;
+
+  border-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 185px;
+    order: -1;
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+    margin: 0;
+  }
+}
+
+.page-header__login-link:hover {
+  background-color: #ffbd30;
+}
+
+.page-header__login-link:active {
+  color: transparentize(#161c35, 0.3);
+}
+
+.page-header__contacts {
+  padding: 0;
+  margin: 50px 0 40px 0;
+
+  @media (min-width: 768px) {
+    margin: 90px 0 135px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    order: 3;
+  }
+}
+
+.page-header__social {
+  margin-bottom: 40px;
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.page-header__main-menu--menu-open {
   background-color: white;
+
+  .page-header__logo {
+    display: none;
+  }
+
+  .page-header__logo--blue {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #161c35;
+  }
 }
 
 .page-header__logo-wrapper {
-  width: 270px;
-  margin: 0 auto;
+  // width: 270px;
+  // margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
 
   @media (min-width: 768px) {
-    width: 688px;
+    // width: 688px;
+    order: -2;
+  }
+}
+
+.page-header__main-menu-toggle {
+  // position: absolute;
+  // top: -13px;
+  // right: 25px;
+  position: relative;
+  margin-left: auto;
+
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+
+  @media (min-width: 768px) {
+    // top: -35px;
+    // right: 50%;
+    // left: 50%;
+    order: -2;
+    margin-left: auto;
+  }
+
+  @media (min-width: 1200px) {
+    display: none;
+  }
+}
+
+.page-header__main-menu--menu-close .page-header__main-menu-toggle::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 25px;
+  height: 2px;
+  background-color: #ffffff;
+
+  box-shadow: 0 5px 0 #ffffff;
+}
+
+.page-header__main-menu--menu-open .page-header__main-menu-toggle {
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    // top: 2px;
+    width: 25px;
+    height: 2px;
+    background-color: #cccccc;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
   }
 }
 

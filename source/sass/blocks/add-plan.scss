@@ -397,6 +397,10 @@
   color: #161c35;
   border: none;
 
+  svg {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     width: 285px;
     font-size: 24px;
@@ -406,6 +410,10 @@
     box-sizing: border-box;
     color: #1d2e5b;
     text-align: left;
+
+    svg {
+      display: block;
+    }
   }
 }
 
