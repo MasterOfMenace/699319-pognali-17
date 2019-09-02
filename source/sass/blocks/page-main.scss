@@ -27,6 +27,10 @@
   background-color: #161c35;
   padding-top: 40px;
   padding-bottom: 15px;
+  //z-index не сработал(
+  opacity: 0.99;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 
   @media (min-width: $tablet-width) {
     padding-top: 100px;
