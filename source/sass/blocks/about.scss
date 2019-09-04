@@ -1,7 +1,7 @@
 .about {
   position: relative;
   width: 100%;
-  z-index: 1;
+  z-index: 6;
   background-color: #192144;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -10,7 +10,7 @@
     content: "";
     position: absolute;
     z-index: -1;
-    top: 0;
+    top: -6px;
     left: -21px;
     width: 132px;
     height: 132px;
@@ -19,8 +19,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
 
 
     &::before {
@@ -63,7 +63,8 @@
   @media (min-width: $tablet-width) {
     background-image: url("../../img/about-tablet@1x.png");
     background-repeat: no-repeat;
-    background-position: bottom 80px right 8px;
+    // background-position: bottom 80px right 8px;
+    background-position: top 40px right 6px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../../img/about-tablet@2x.png");
@@ -81,7 +82,6 @@
       background-size: 630px auto;
     }
   }
-
 }
 
 .about__wrapper-elements {
@@ -112,7 +112,9 @@
   @media (min-width: 728px) {
     // width: 344px;
     width: $tablet-block-width;
-    padding: 0 360px 0 35px;
+    // padding: 0 360px 0 35px;
+    padding-left: 35px;
+    padding-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -127,6 +129,10 @@
   margin: 0;
   margin-top: 30px;
 
+  @media (min-width: $tablet-width) {
+    padding-bottom: 42px;
+  }
+
   @media (min-width: 1200px) {
     margin: 0;
     padding: 0 0 60px 0;
@@ -138,6 +144,9 @@
   padding: 20px 0;
 
   @media (min-width: 728px) {
+    width: 315px;
+    padding: 0;
+    padding-bottom: 32px;
     font-size: 28px;
     line-height: 33px;
   }
@@ -153,6 +162,8 @@
   font-weight: 700;
 
   @media (min-width: 728px) {
+    width: 314px;
+    padding-bottom: 52px;
     font-size: 21px;
     line-height: 25px;
   }
@@ -168,6 +179,8 @@
 
   @media (min-width: 728px) {
     display: inline-block;
+    width: 274px;
+    box-sizing: border-box;
     padding: 30px 120px 28px 34px;
   }
 }

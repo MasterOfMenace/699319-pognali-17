@@ -2,7 +2,8 @@
   background-image: linear-gradient(to bottom, transparent, transparent 80px, #192144 80px);
 
   @media (min-width: 768px) {
-    background-image: linear-gradient(to bottom, transparent, transparent 140px, #192144 140px);
+    // background-image: linear-gradient(to bottom, transparent, transparent 140px, #192144 140px);
+    background-image: linear-gradient(to bottom, transparent, transparent 130px, #192144 130px);
   }
 
   @media (min-width: 1200px) {
@@ -33,7 +34,7 @@
   padding: 0;
   width: 270px;
   border-radius: 10px;
-  background-image: linear-gradient(to bottom, #ff8d30, #ffd74b);
+  // background-image: linear-gradient(to bottom, #ff8d30, #ffd74b);
 
   @media (min-width: 728px) {
     display: flex;
@@ -45,7 +46,7 @@
 
   @media (min-width: 1200px) {
     width: 100%;
-    background-image: linear-gradient(to right, #ff8d30, #ffd74b);
+    // background-image: linear-gradient(to right, #ff8d30, #ffd74b);
   }
 }
 
@@ -66,8 +67,10 @@
   @media (min-width: 728px) {
     font-size: 24px;
     line-height: 24px;
-    width: 344px;
-    padding: 31px 0 60px 34px;
+    // width: 344px;
+    width: 365px;
+    // padding: 31px 0 60px 34px;
+    padding: 31px 90px 68px 34px;
   }
 
   @media (min-width: 1200px) {
@@ -86,8 +89,8 @@
 
     @media (min-width: 768px) {
       top: initial;
-      bottom: 28px;
-      left: 34px;
+      bottom: 33px;
+      left: 36px;
     }
 
     @media (min-width: 1200px) {
@@ -106,16 +109,42 @@
 
 .how-it-works__item--first {
   background-color: #ff8d30;
+
+  @media (min-width: $tablet-width) {
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 0;
+  }
 }
 
 .how-it-works__item--second {
   background-color: #ffa530;
+
+  @media (min-width: $tablet-width) {
+    width: 344px;
+    border-top-left-radius: 18px;
+    margin-left: -22px;
+    border-top-right-radius: 18px;
+  }
 }
 
 .how-it-works__item--third {
   background-color: #ffbd30;
+
+  @media (min-width: $tablet-width) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 18px;
+  }
 }
 
 .how-it-works__item--fourth {
   background-color: #ffd74b;
+
+  @media (min-width: $tablet-width) {
+    width: 344px;
+    margin-left: -22px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
 }

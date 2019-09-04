@@ -1,4 +1,6 @@
 .tariffs {
+  position: relative;
+  z-index: 3;
   background-color: #edeff6;
   color: #444444;
   margin-top: -25px;
@@ -140,6 +142,8 @@
   }
 
   @media (min-width: 768px) {
+    font-size: 28px;
+    line-height: 33px;
     display: flex;
     justify-content: space-between;
 
@@ -160,12 +164,24 @@
   }
 }
 
-.tariffs__description {
-  @media (min-width: 728px) {
-    font-size: 28px;
-    line-height: 33px;
+.tariffs__item--modal {
+  &::before,
+  &::after {
+    content: initial;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 28px;
   }
 }
+
+// .tariffs__description {
+//   @media (min-width: 728px) {
+//     font-size: 28px;
+//     line-height: 33px;
+//   }
+// }
 
 .tariffs__link {
   font-weight: 700;
