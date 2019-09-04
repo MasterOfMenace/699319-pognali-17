@@ -1,15 +1,27 @@
 .about {
-  background-color: #edeff6;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  background-color: #192144;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 
-  @media (min-width: 728px) {
-    min-height: 620px;
-    // display: flex;
-    // padding: 0 25px;
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: -21px;
+    width: 132px;
+    height: 132px;
+    background-color: #141b3b;
+    border-radius: 10px;
+  }
 
-    background-image: none;
-    // background-color: #192144;
-    position: relative;
-    z-index: 1;
+  @media (min-width: $tablet-width) {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
 
     &::before {
       content: "";
@@ -21,14 +33,10 @@
       width: 688px;
       height: 213px;
       border-radius: 10px;
-      // background-color: #141b3b;
     }
   }
 
-  @media (min-width: 1200px) {
-    // width: 1320px;
-    // margin: 0 auto;
-    // padding: 0;
+  @media (min-width: $desktop-width) {
     padding: 0;
 
     &::before {
@@ -41,19 +49,76 @@
   }
 }
 
-.about__wrapper {
-  // padding: 0 30px 85px 25px;
-  padding: 0 35px 80px 25px;
+.about__wrapper-background {
+  width: 100%;
+  background-image: url("../../img/about-mobile@1x.png");
+  background-position: bottom right 10px;
+  background-repeat: no-repeat;
 
-  @media (min-width: 728px) {
-    width: 344px;
-    padding: 0 5px 0 35px;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/about-mobile@2x.png");
+    background-size: 291px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../../img/about-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: bottom 80px right 8px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/about-tablet@2x.png");
+      background-size: 376px auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../../img/about-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: bottom right 60px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/about-desktop@2x.png");
+      background-size: 630px auto;
+    }
+  }
+
+}
+
+.about__wrapper-elements {
+  width: $mobile-block-width;
+  margin: 0 auto;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
   }
 
   @media (min-width: 1200px) {
-    width: 690px;
+    width: 1320px;
+    margin: 0 auto;
+    padding-top: 70px;
+  }
+}
+
+.about__wrapper {
+  // padding: 0 30px 85px 25px;
+  width: $mobile-block-width;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0 35px 80px 25px;
+
+  @media (min-width: 728px) {
+    // width: 344px;
+    width: $tablet-block-width;
+    padding: 0 360px 0 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-block-width;
     box-sizing: border-box;
-    padding: 60px 0 0 70px;
+    padding: 60px 700px 0 70px;
   }
 }
 
@@ -110,7 +175,7 @@
 .about__image {
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: block;
     width: 376px;
     height: 548px;
@@ -120,42 +185,5 @@
   @media (min-width: 1200px) {
     width: 630px;
     height: 665px;
-  }
-}
-
-.about__wrapper-background {
-  width: 100%;
-  background-color: #192144;
-  border-bottom-left-radius: 25px;
-  border-bottom-right-radius: 25px;
-  background-image: url("../../img/about-mobile@1x.png");
-  // background-position: center center;
-  background-position: bottom right 10px;
-  background-repeat: no-repeat;
-
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/about-mobile@2x.png");
-    // background-size: 320px auto;
-    background-size: 291px auto;
-  }
-
-  @media (min-width: 768px) {
-    background-image: none;
-  }
-}
-
-.about__wrapper-elements {
-  width: 270px;
-  margin: 0 auto;
-  display: flex;
-
-  @media (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media (min-width: 1200px) {
-    width: 1320px;
-    margin: 0 auto;
-    padding-top: 70px;
   }
 }
