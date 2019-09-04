@@ -11,6 +11,7 @@
     padding-top: 25px;
     padding-bottom: 25px;
     padding-left: 25px;
+    padding-right: 35px;
   }
 
   @media (min-width: 1200px) {
@@ -75,21 +76,30 @@
 .pagination__buttons-item {
   box-sizing: border-box;
   width: 135px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+  vertical-align: middle;
+  background: none;
+  border: none;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
   padding-top: 15px;
   padding-bottom: 15px;
 
   &--previous-page {
     border-right: 2px solid #edeff6;
+    // border-top-left-radius: 15px;
+    // border-bottom-left-radius: 15px;
   }
 
   @media (min-width: 768px) {
     width: auto;
+    // padding: 0;
+    // padding-right: 30px;
 
     &--previous-page {
       border: none;
+      margin-right: 30px;
     }
   }
 }

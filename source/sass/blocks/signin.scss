@@ -1,12 +1,14 @@
 .signin {
+  padding-top: 72px;
+  padding-bottom: 7px;
   background-color: #192144;
 }
 
 .signin__wrapper {
   width: 270px;
   margin: 0 auto;
-  padding-top: 72px;
-  padding-bottom: 15px;
+  // padding-top: 72px;
+  // padding-bottom: 15px;
   display: flex;
   flex-direction: column;
 
@@ -65,7 +67,7 @@
   }
 
   button {
-    padding: 24px 23px 24px 27px;
+    padding: 24px 23px 18px 27px;
     background-color: #ffd74b;
     border: none;
     border-radius: 8px;

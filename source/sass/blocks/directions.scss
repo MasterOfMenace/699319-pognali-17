@@ -3,7 +3,11 @@
   flex-direction: column;
   background-color: #edeff6;
   color: #000000;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
+  // padding-bottom: 25px;
+  padding-bottom: 28px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 
   @media (min-width: 1200px) {
     // position: relative;
@@ -16,9 +20,12 @@
 }
 
 .directions__wrapper {
-  padding-top: 70px;
   width: 270px;
   margin: 0 auto;
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-left: 25px;
+  padding-right: 50px;
 
   @media (min-width: 768px) {
     width: auto;
@@ -68,7 +75,8 @@
 .directions__description {
   color: #444444;
   margin: 0;
-  padding-bottom: 65px;
+  // padding-bottom: 46px;
+  padding-bottom: 62px;
 
   @media (min-width: 720px) {
     font-size: 28px;
@@ -76,10 +84,14 @@
   }
 }
 
+// .directions__list {
+//   margin-bottom: 25px;
+// }
+
 .directions__show-all {
   // display: inline-block;
-  padding: 24px;
-  margin-top: 15px;
+  padding: 23px;
+  margin-top: 25px;
   position: relative;
 
   @media (min-width: 1200px) {

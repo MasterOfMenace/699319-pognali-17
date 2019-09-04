@@ -57,9 +57,11 @@
   color: #161c35;
 
   box-sizing: border-box;
-  padding: 23px 95px 23px 25px;
-
-  border-radius: 10px;
+  padding: 22px 95px 32px 25px;
+  /* border-radius: 10px; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: -10px;
 
   @media (min-width: 728px) {
     font-size: 24px;
@@ -94,6 +96,11 @@
       bottom: initial;
       left: initial;
     }
+  }
+
+  &:last-child {
+    border-radius: 10px;
+    padding-bottom: 23px;
   }
 }
 

@@ -42,7 +42,8 @@
 }
 
 .about__wrapper {
-  padding: 0 30px 85px 25px;
+  // padding: 0 30px 85px 25px;
+  padding: 0 35px 80px 25px;
 
   @media (min-width: 728px) {
     width: 344px;
@@ -125,15 +126,17 @@
 .about__wrapper-background {
   width: 100%;
   background-color: #192144;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
   background-image: url("../../img/about-mobile@1x.png");
-  background-position: center center;
+  // background-position: center center;
+  background-position: bottom right 10px;
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../../img/about-mobile@2x.png");
-    background-size: 320px auto;
+    // background-size: 320px auto;
+    background-size: 291px auto;
   }
 
   @media (min-width: 768px) {

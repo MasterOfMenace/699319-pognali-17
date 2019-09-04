@@ -1,6 +1,7 @@
 .intro {
+  padding-top: 20px;
   background-image: url("../../img/globe-back-mobile@1x.jpg");
-  background-position: top -60px center;
+  background-position: top -71px center;
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
@@ -20,7 +21,7 @@
 .intro__wrapper {
   background-image: url("../../img/traveller-illustration-mobile@1x.png");
   background-size: 192px 255px;
-  background-position: 79px 167px;
+  background-position: 79px 132px;
   background-repeat: no-repeat;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
@@ -63,7 +64,7 @@
   font-weight: 700;
   margin: 0 auto;
   padding: 0;
-  padding-top: 35px;
+  // padding-top: 35px;
   padding-bottom: 265px;
   width: 237px;
   text-align: center;
@@ -97,7 +98,8 @@
 
 .intro__user-contacts {
   position: absolute;
-  top: -20px;
+  // top: -20px;
+  top: -18px;
   left: 25px;
 }
 
@@ -107,7 +109,8 @@
 }
 
 .intro__review {
-  padding: 50px 0 30px 0;
+  // padding: 50px 0 30px 0;
+  padding: 48px 0 40px 0;
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -128,4 +131,9 @@
     margin: 0 auto;
     padding-bottom: 123px;
   }
+}
+
+.intro__login-link {
+  padding: 0;
+  padding-top: 5px;
 }

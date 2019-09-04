@@ -1,7 +1,8 @@
 .page-footer {
   position: absolute;
   width: 100%;
-  margin-top: -25px;
+  // margin-top: -25px;
+  margin-top: -50px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   display: flex;
@@ -57,7 +58,8 @@
 }
 
 .page-footer__social {
-  margin: 40px 0 35px 0;
+  // margin: 40px 0 35px 0;
+  margin: 34px 0 40px 0;
 
   @media (min-width: 768px) {
     width: auto;
@@ -69,7 +71,8 @@
   display: flex;
   justify-content: space-between;
   border-top: 1px solid #e2e5f2;
-  padding-top: 14px;
+  // padding-top: 14px;
+  padding-top: 5px;
 
   @media (min-width: 768px) {
     border: none;

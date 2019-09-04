@@ -67,18 +67,18 @@
 
 .contacts-list__item--for-intro {
   position: relative;
-  width: 45px;
+  // width: 45px;
   /* padding: 0; */
-  height: 45px;
+  // height: 45px;
   // border-radius: 50%;
+  width: 40px;
+  height: 40px;
   padding: 0;
 
   span {
     display: none;
   }
 }
-
-
 
 .contacts-list__item--for-header {
   @media (min-width: $desktop-width) {
@@ -119,8 +119,10 @@
   top: 0;
   left: 0;
 
-  width: 45px;
-  height: 45px;
+  // width: 45px;
+  // height: 45px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
 
   background-color: #121936;
@@ -204,12 +206,10 @@
 .contacts-list__phone-icon,
 .contacts-list__email-icon {
   position: absolute;
-  top: 13px;
-  left: 13px;
-
+  top: 12px;
+  left: 11px;
   width: 18px;
   height: 18px;
-
   fill: #ffd74b;
 }
 
