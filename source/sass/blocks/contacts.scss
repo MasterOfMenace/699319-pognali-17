@@ -5,6 +5,11 @@
     width: 100%;
     border: none;
     margin-top: 123px;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 300px;
+      height: 531px;
+    }
   }
 }
 
@@ -27,6 +32,12 @@
   background-color: #192144;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 49px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .contacts__promo {
@@ -38,20 +49,32 @@
     font-size: 28px;
     line-height: 33px;
     white-space: normal;
+    margin-bottom: 52px;
   }
 }
 
 .contacts__contacts-list {
   margin: 20px 0 30px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .contacts__address-route-link-background {
+  width: 100%;
+  position: absolute;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   background: #ffd74b;
-  z-index: 7000;
-  width: 100%;
-  position: absolute;
+  // z-index: 7000;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 47px;
+    padding-bottom: 85px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .contacts__address-route-link-wrapper {
@@ -65,6 +88,7 @@
 
   @media (min-width: 768px) {
     width: 688px;
+    margin: 0 auto;
     padding-left: 35px;
     padding-right: 35px;
   }
@@ -74,6 +98,10 @@
   display: flex;
   margin-bottom: 32px;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .contacts__address-icon {
@@ -88,6 +116,17 @@
 
   svg {
     fill: #ffd74b;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 68px;
+    height: 68px;
+    margin-right: 25px;
+
+    svg {
+      width: 21px;
+      height: 32px;
+    }
   }
 }
 
@@ -111,4 +150,15 @@
   box-sizing: border-box;
   // padding: 21px 0 18px 21px;
   padding: 22px 0 18px 21px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 24px;
+    padding-left: 33px;
+    padding-bottom: 26px;
+  }
+}
+
+.contacts__route-link-icon {
+  top: 30px;
+  right: 34px;
 }

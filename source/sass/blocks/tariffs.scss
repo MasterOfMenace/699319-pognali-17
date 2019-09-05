@@ -8,21 +8,29 @@
   padding-bottom: 35px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 130px;
+    padding-bottom: 88px;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+  }
 }
 
 .tariffs__wrapper-elements {
-  width: 270px;
+  width: $mobile-block-width;
   margin: 0 auto;
   position: relative;
   // padding-top: 40px;
   // padding-bottom: 35px;
 
-  @media (min-width: 768px) {
-    width: 688px;
+  @media (min-width: $tablet-width) {
+    width: $tablet-block-width;
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
-    padding-bottom: 65px;
+    // padding-top: 70px;
+    // padding-bottom: 65px;
 
     &::before {
       content: "";
@@ -30,7 +38,8 @@
       height: 285px;
       position: absolute;
       background-color: #e2e5f2;
-      bottom: 100px;
+      // bottom: 100px;
+      bottom: 33px;
       right: 0;
       border-radius: 15px;
     }
@@ -56,7 +65,7 @@
   padding-right: 140px;
   padding-left: 25px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     text-align: center;
   }
@@ -69,8 +78,8 @@
   top: -13px;
   right: 0;
 
-  @media (min-width: 768px) {
-    bottom: 35px;
+  @media (min-width: $tablet-width) {
+    bottom: -39px;
     right: 45px;
     top: unset;
   }
@@ -89,11 +98,13 @@
   padding: 0 0 0 25px;
   list-style: none;
 
-  @media (min-width: 768px) {
-    margin-top: 75px;
-    margin-bottom: 60px;
-    padding-right: 30px;
-    padding-left: 90px;
+  @media (min-width: $tablet-width) {
+    // margin-top: 75px;
+    // margin-bottom: 60px;
+    // padding-right: 30px;
+    // padding-left: 90px;
+    margin: 0;
+    padding: 75px 30px 57px 90px;
   }
 
   @media (min-width: 1200px) {
@@ -141,16 +152,19 @@
     right: 2px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
     display: flex;
     justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    padding-right: 4px;
 
     &::before {
       font-size: 28px;
       left: -63px;
-      top: 24px;
+      top: 16px;
       right: initial;
     }
 
@@ -162,6 +176,14 @@
       right: initial;
     }
   }
+}
+
+.tariffs__item--second::after {
+  background-color: #ffbd30;
+}
+
+.tariffs__item--third::after {
+  background-color: #ffd74b;
 }
 
 .tariffs__item--modal {
@@ -177,20 +199,51 @@
 }
 
 // .tariffs__description {
-//   @media (min-width: 728px) {
+//   @media (min-width: $tablet-width) {
 //     font-size: 28px;
 //     line-height: 33px;
 //   }
 // }
 
 .tariffs__link {
+  position: relative;
   font-weight: 700;
   line-height: 16px;
   color: #192144;
   margin-left: 25px;
 
-  @media (min-width: 728px) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
+    padding-left: 89px;
+
+    svg {
+      position: absolute;
+      left: 25px;
+      top: -1px;
+      fill: #132576;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -24px;
+      width: 67px;
+      height: 67px;
+      border-radius: 50%;
+      left: 0;
+      background-color: #e2e5f2;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
+

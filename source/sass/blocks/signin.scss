@@ -3,6 +3,12 @@
   padding-top: 97px;
   padding-bottom: 7px;
   background-color: #192144;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -60px;
+    padding-top: 131px;
+    padding-bottom: 56px;
+  }
 }
 
 .signin__wrapper {
@@ -35,6 +41,9 @@
   @media (min-width: 768px) {
     font-size: 28px;
     line-height: 33px;
+    padding: 0;
+    padding-top: 58px;
+    padding-bottom: 66px;
   }
 }
 
@@ -79,12 +88,22 @@
   }
 
   @media (min-width: 768px) {
+    border-radius: 20px;
+
     input {
       padding-left: 35px;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 700;
     }
 
     button {
-      padding: 34px 36px 33px 36px;
+      // padding: 34px 36px 33px 36px;
+      padding: 34px 36px 29px 36px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 0;
+      border-top-left-radius: 0;
     }
   }
 }
