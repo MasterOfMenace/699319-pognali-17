@@ -9,21 +9,31 @@
     padding-top: 131px;
     padding-bottom: 56px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 162px;
+    padding-bottom: 65px;
+  }
 }
 
 .signin__wrapper {
-  width: 270px;
+  width: $mobile-block-width;
   margin: 0 auto;
   // padding-top: 72px;
   // padding-bottom: 15px;
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
-    width: 688px;
+  @media (min-width: $tablet-width) {
+    width: $tablet-block-width;
     padding-left: 35px;
     padding-right: 35px;
     box-sizing: border-box;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-block-width;
+    align-items: center;
   }
 }
 
@@ -38,12 +48,17 @@
   text-align: center;
   padding: 20px 35px 30px 35px;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     font-size: 28px;
     line-height: 33px;
     padding: 0;
     padding-top: 58px;
     padding-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 630px;
+    padding-bottom: 60px;
   }
 }
 
@@ -63,7 +78,7 @@
 }
 
 .signin__form {
-  // width: 270px;
+  // width: $mobile-block-width;
   display: flex;
   position: relative;
   background-color: #ffffff;
@@ -76,18 +91,11 @@
     padding-left: 25px;
   }
 
-  button {
-    padding: 24px 23px 18px 27px;
-    background-color: #ffd74b;
-    border: none;
-    border-radius: 8px;
-  }
-
   svg {
     fill: #1d2e5b;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     border-radius: 20px;
 
     input {
@@ -96,14 +104,55 @@
       line-height: 24px;
       font-weight: 700;
     }
+  }
 
-    button {
-      // padding: 34px 36px 33px 36px;
-      padding: 34px 36px 29px 36px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      border-bottom-left-radius: 0;
-      border-top-left-radius: 0;
+  @media (min-width: $desktop-width) {
+    width: 1175px;
+
+    input {
+      width: 850px;
+      box-sizing: border-box;
     }
   }
+}
+
+.signin__submit {
+  position: relative;
+  padding: 24px 23px 18px 27px;
+  background-color: #ffd74b;
+  border: none;
+  border-radius: 8px;
+
+  @media (min-width: $tablet-width) {
+    padding: 34px 36px 29px 36px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    padding-top: 29px;
+    padding-right: 50px;
+    text-align: left;
+  }
+}
+
+.signin__submit-title {
+  display: none;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #1d2e5b;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
+.signin__button-icon {
+  position: absolute;
+  top: 34px;
+  right: 38px;
 }

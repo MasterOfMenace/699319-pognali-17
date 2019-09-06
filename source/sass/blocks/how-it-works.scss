@@ -64,6 +64,11 @@
   border-top-right-radius: 10px;
   margin-top: -10px;
 
+  &:last-child {
+    border-radius: 10px;
+    padding-bottom: 23px;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
@@ -103,10 +108,10 @@
     }
   }
 
-  &:last-child {
-    border-radius: 10px;
-    padding-bottom: 23px;
-  }
+  // &:last-child {
+  //   border-radius: 10px;
+  //   padding-bottom: 23px;
+  // }
 }
 
 .how-it-works__item--first {
@@ -193,7 +198,7 @@
 
   @media (min-width: $desktop-width) {
     width: 315px;
-    margin-left: -13px;
+    margin-left: -14px;
     border-radius: 18px;
 
     &::before {

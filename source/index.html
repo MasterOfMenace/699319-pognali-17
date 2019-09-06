@@ -217,12 +217,6 @@
             <p class="directions__description">
                 Мы не продаем туры и&nbsp;ничего не рекламируем. Люди сами пишут о странах, куда хотели бы отправиться и чем можно там заняться.
             </p>
-            <!-- <a href="form.html" class="directions__show-all directions__show-all--desktop button">
-              <svg class="button__icon" width="10" height="14">
-                <use xlink:href="img/sprite.svg#button-icon"></use>
-              </svg>
-              Показать все
-            </a> -->
           </div>
 
           <ul class="directions__list countries">
@@ -451,7 +445,7 @@
       </section>
 
       <section class="tariffs">
-        <div class="tariffs__wrapper-elements">
+        <div class="tariffs__wrapper">
           <h2 class="visually-hidden">Стоимость</h2>
           <h2 class="tariffs__title">Добавьте свой профиль</h2>
           <img class="tariffs__image" width="99" height="99" src="./img/rates@1x.png" alt="Картинка раздела тарифов">
@@ -512,9 +506,10 @@
           <p class="signin__description">
             Зарегистрируйтесь, это быстро и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a href="#" class="signin__login-link">aвторизуйтесь</a>.
           </p>
-          <form action="" method="get" class="signin__form">
+          <form class="signin__form" action="https://echo.htmlacademy.ru" method="get">
             <input type="email" name="email" id="email" placeholder="E-mail">
-            <button type="submit">
+            <button class="signin__submit" type="submit">
+              <span class="signin__submit-title">Регистрация</span>
               <svg class="signin__button-icon" width="10" height="14">
                 <use xlink:href="img/sprite.svg#button-icon">
               </svg>
@@ -529,11 +524,15 @@
             <h2 class="visually-hidden">Контакты</h2>
             <p class="contacts__promo">
                 Остались вопросы?
-                Мы с радостью на них ответим!
+                <span class="contacts__promo-part contacts__promo-part--short">
+                  Мы с радостью на них ответим!
+                </span>
+                <span class="contacts__promo-part contacts__promo-part--long">Свяжитесь с нами удобным для вас способом
+                </span>
             </p>
             <ul class="contacts__contacts-list contacts-list contacts-list--yellow contacts-list--for-contacts">
               <li class="contacts-list__item">
-                <a class="contacts-list__link contacts-list__link--for-header contacts-list__phone" href="#">
+                <a class="contacts-list__link contacts-list__phone" href="#">
                   <svg class="contacts-list__phone-icon contacts-list__phone-icon--mobile" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   viewBox="0 0 36 36">
                 <path d="M18,0C11.6,0,5.2,1.1,2.8,3.4C0.9,5.3,0.2,8.7,0,10.8c0,0,0,0.2,0,0.3c0,0.8,0.7,1.5,1.5,1.5
@@ -552,9 +551,9 @@
                 </a>
 
               </li>
-              <li class="contacts-list__item contacts-list__item--for-header">
-                <a class="contacts-list__link contacts-list__link--for-header contacts-list__email" href="#">
-                    <svg class="contacts-list__email-icon" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              <li class="contacts-list__item">
+                <a class="contacts-list__link contacts-list__email" href="#">
+                    <svg class="contacts-list__email-icon contacts-list__email-icon--mobile" width="18" height="18" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 0 36 26">
                   <path d="M0,23c0,1.6,1.3,3,3,3h30c1.7,0,3-1.3,3-3V3c0-1.6-1.3-3-3-3H3C1.3,0,0,1.3,0,3L0,23L0,23z M11,13L4.2,6.2
                     c-0.6-0.6-0.6-1.5,0-2c0.6-0.6,1.5-0.6,2.1,0l11,10.9c0.4,0.4,1.2,0.4,1.6,0l11-10.9c0.6-0.6,1.5-0.6,2.1,0c0.6,0.6,0.6,1.5,0,2

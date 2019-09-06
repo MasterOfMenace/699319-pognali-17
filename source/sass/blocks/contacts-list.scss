@@ -57,6 +57,41 @@
       }
     }
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contacts-list__phone-icon--mobile,
+    .contacts-list__email-icon--mobile {
+      display: block;
+    }
+
+    .contacts-list__phone-icon--desktop,
+    .contacts-list__email-icon--desktop {
+      display: none;
+    }
+
+    .contacts-list__link {
+      // padding-left: 90px;
+      padding-left: 120px;
+
+      svg {
+        width: 36px;
+        height: 36px;
+        left: 24px;
+        top: 7px;
+      }
+
+      &::before {
+        top: -19px;
+        left: -4px;
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
 }
 
 .contacts-list--yellow {

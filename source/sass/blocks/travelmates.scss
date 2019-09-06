@@ -46,6 +46,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
+    background-position: top 194px left 548px, bottom 80px left 190px;
   }
 }
 
@@ -86,7 +87,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 70px;
+      // top: 70px;
+      top: 130px;
       left: 0;
     }
   }
@@ -126,7 +128,14 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 1320px;
+    margin: 0 auto;
     flex-direction: row;
+    padding: 185px 0 133px 0;
+    // padding-top: 185px;
+    // padding-left: 0;
+    // padding-right: 0;
+    // padding-bottom: 133px;
   }
 }
 
@@ -144,7 +153,8 @@
   @media (min-width: $desktop-width) {
     width: 630px;
     box-sizing: border-box;
-    padding: 0 130px 0 70px;
+    // padding: 0 130px 0 70px;
+    padding: 0 130px 90px 70px;
   }
 }
 
@@ -189,6 +199,11 @@
     margin-bottom: 80px;
     // padding: 0;
   }
+
+  // @media (min-width: $desktop-width) {
+  //   // padding-top: 10px;
+  //   margin-top: 10px;
+  // }
 }
 
 .travelmates__show-all {
@@ -198,6 +213,12 @@
   @media (min-width: $tablet-width) {
     margin-top: 80px;
     padding: 28px 0 29px 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 280px;
+    box-sizing: border-box;
+    margin: -83px 0 0 71px;
   }
 }
 
